@@ -30,11 +30,6 @@
                 "schema": {
                   "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
                 }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/OperationOutcome.xsd"
-                }
               }
             }
           },
@@ -44,11 +39,6 @@
               "application/fhir+json": {
                 "schema": {
                   "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/CapabilityStatement"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/CapabilityStatement.xsd"
                 }
               }
             }
@@ -84,11 +74,6 @@
                 "schema": {
                   "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
                 }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/OperationOutcome.xsd"
-                }
               }
             }
           },
@@ -98,11 +83,6 @@
               "application/fhir+json": {
                 "schema": {
                   "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/Bundle.xsd"
                 }
               }
             }
@@ -187,11 +167,6 @@
                 "schema": {
                   "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
                 }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/OperationOutcome.xsd"
-                }
               }
             }
           },
@@ -209,11 +184,6 @@
               "application/fhir+json": {
                 "schema": {
                   "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/DocumentReference"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/DocumentReference.xsd"
                 }
               }
             }
@@ -252,11 +222,6 @@
                 "schema": {
                   "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
                 }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/OperationOutcome.xsd"
-                }
               }
             }
           },
@@ -266,11 +231,6 @@
               "application/fhir+json": {
                 "schema": {
                   "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/Bundle.xsd"
                 }
               }
             }
@@ -338,11 +298,6 @@
                 "schema": {
                   "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
                 }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/OperationOutcome.xsd"
-                }
               }
             }
           },
@@ -360,11 +315,6 @@
               "application/fhir+json": {
                 "schema": {
                   "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Organization"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/Organization.xsd"
                 }
               }
             }
@@ -403,11 +353,6 @@
                 "schema": {
                   "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
                 }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/OperationOutcome.xsd"
-                }
               }
             }
           },
@@ -417,11 +362,6 @@
               "application/fhir+json": {
                 "schema": {
                   "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/Bundle.xsd"
                 }
               }
             }
@@ -538,11 +478,6 @@
                 "schema": {
                   "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
                 }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/OperationOutcome.xsd"
-                }
               }
             }
           },
@@ -560,11 +495,6 @@
               "application/fhir+json": {
                 "schema": {
                   "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Patient"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/Patient.xsd"
                 }
               }
             }
@@ -603,11 +533,6 @@
                 "schema": {
                   "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
                 }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/OperationOutcome.xsd"
-                }
               }
             }
           },
@@ -617,11 +542,6 @@
               "application/fhir+json": {
                 "schema": {
                   "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/Bundle.xsd"
                 }
               }
             }
@@ -689,11 +609,6 @@
                 "schema": {
                   "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
                 }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/OperationOutcome.xsd"
-                }
               }
             }
           },
@@ -711,11 +626,6 @@
               "application/fhir+json": {
                 "schema": {
                   "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Practitioner"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/Practitioner.xsd"
                 }
               }
             }
@@ -754,11 +664,6 @@
                 "schema": {
                   "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
                 }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/OperationOutcome.xsd"
-                }
               }
             }
           },
@@ -768,11 +673,6 @@
               "application/fhir+json": {
                 "schema": {
                   "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/Bundle.xsd"
                 }
               }
             }
@@ -840,11 +740,6 @@
                 "schema": {
                   "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
                 }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/OperationOutcome.xsd"
-                }
               }
             }
           },
@@ -862,11 +757,6 @@
               "application/fhir+json": {
                 "schema": {
                   "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/PractitionerRole"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/PractitionerRole.xsd"
                 }
               }
             }

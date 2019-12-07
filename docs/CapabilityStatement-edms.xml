@@ -10,7 +10,7 @@
   <version value="3.0.0"/>
   <name value="HL7 UK EDMS API Capability Statement"/>
   <status value="active"/>
-  <date value="2019-12-07T11:48:37+00:00"/>
+  <date value="2019-12-07T14:09:58+00:00"/>
   <publisher value="HL7 UK"/>
   <contact>
     <telecom>
@@ -28,7 +28,6 @@
   <kind value="instance"/>
   <fhirVersion value="3.0.2"/>
   <acceptUnknown value="extensions"/>
-  <format value="application/fhir+xml"/>
   <format value="application/fhir+json"/>
   <rest>
     <mode value="server"/>

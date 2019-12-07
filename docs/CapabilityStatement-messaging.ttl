@@ -16,7 +16,7 @@
   fhir:CapabilityStatement.version [ fhir:value "3.0.0"];
   fhir:CapabilityStatement.name [ fhir:value "HL7 UK TIE API Capability Statement"];
   fhir:CapabilityStatement.status [ fhir:value "active"];
-  fhir:CapabilityStatement.date [ fhir:value "2019-12-07T11:48:37+00:00"^^xsd:dateTime];
+  fhir:CapabilityStatement.date [ fhir:value "2019-12-07T14:09:58+00:00"^^xsd:dateTime];
   fhir:CapabilityStatement.publisher [ fhir:value "HL7 UK"];
   fhir:CapabilityStatement.contact [
      fhir:index 0;
@@ -39,7 +39,7 @@
   fhir:CapabilityStatement.fhirVersion [ fhir:value "3.0.2"];
   fhir:CapabilityStatement.acceptUnknown [ fhir:value "extensions"];
   fhir:CapabilityStatement.format [
-     fhir:value "application/fhir+xml";
+     fhir:value "application/fhir+json";
      fhir:index 0
   ];
   fhir:CapabilityStatement.rest [

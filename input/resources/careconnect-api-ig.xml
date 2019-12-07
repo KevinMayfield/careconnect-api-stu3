@@ -75,6 +75,11 @@
         <generation value="html"/>
       </page>
       <page>
+        <nameUrl value="swagger-messaging.html"/>
+        <title value="OpenAPI Messging"/>
+        <generation value="html"/>
+      </page>
+      <page>
         <nameUrl value="index.html"/>
         <title value="CareConnect API"/>
         <generation value="html"/>

@@ -3,7 +3,7 @@
 
 err = 30, warn = 0, info = 0
 IG Publisher Version: v1.0.15-SNAPSHOT
-Generated Sat Dec 07 11:49:16 GMT 2019. FHIR version 3.0.2 for hl7.fhir.uk.api# (canonical = https://fhir.hl7.org.uk/STU3)
+Generated Sat Dec 07 14:10:11 GMT 2019. FHIR version 3.0.2 for hl7.fhir.uk.api# (canonical = https://fhir.hl7.org.uk/STU3)
 
  Build Errors : 3 / 0
  /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/capabilitystatement/edms : 5 / 0
@@ -12,9 +12,9 @@ Generated Sat Dec 07 11:49:16 GMT 2019. FHIR version 3.0.2 for hl7.fhir.uk.api# 
  /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/careconnect-api-ig : 3 / 0
 </table>
 == n/a ==
-ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 130, column 8: The link 'background.html' for "Background" cannot be resolved
-ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 134, column 8: The link 'spec.html' for "Detailed Specification" cannot be resolved
-ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 137, column 8: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 131, column 8: The link 'background.html' for "Background" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 135, column 8: The link 'spec.html' for "Detailed Specification" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 138, column 8: The link 'downloads.html' for "Downloads" cannot be resolved
 == /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/CapabilityStatement/edms.xml ==
 ERROR: CapabilityStatement/edms: CapabilityStatement.rest[0].resource[0].profile: Unable to resolve resource 'https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1'
 ERROR: CapabilityStatement/edms: CapabilityStatement.rest[0].resource[1].profile: Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1'

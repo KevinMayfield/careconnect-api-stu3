@@ -7,6 +7,7 @@
     <ul class="dropdown-menu">
       <li><a href="swagger-pas.html">PAS</a></li>
       <li><a href="swagger-edms.html">EDMS</a></li>
+      <li><a href="swagger-messaging.html">Messaging (TIE)</a></li>
     </ul>
   </li>
   <li><a href="toc.html">Table of Contents</a></li>

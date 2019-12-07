@@ -9,7 +9,7 @@
   "version": "3.0.0",
   "name": "HL7 UK TIE API Capability Statement",
   "status": "active",
-  "date": "2019-12-07T11:48:37+00:00",
+  "date": "2019-12-07T14:09:58+00:00",
   "publisher": "HL7 UK",
   "contact": [
     {
@@ -36,7 +36,7 @@
   "fhirVersion": "3.0.2",
   "acceptUnknown": "extensions",
   "format": [
-    "application/fhir+xml"
+    "application/fhir+json"
   ],
   "rest": [
     {

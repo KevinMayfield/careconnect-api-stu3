@@ -26,9 +26,9 @@
           "default": {
             "description": "Error, with details",
             "content": {
-              "application/fhir+xml": {
+              "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/OperationOutcome.xsd"
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
                 }
               }
             }
@@ -36,9 +36,9 @@
           "200": {
             "description": "the capbility statement",
             "content": {
-              "application/fhir+xml": {
+              "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/CapabilityStatement.xsd"
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/CapabilityStatement"
                 }
               }
             }
@@ -70,9 +70,9 @@
           "description": "The new state of the resource",
           "required": true,
           "content": {
-            "application/fhir+xml": {
+            "application/fhir+json": {
               "schema": {
-                "$ref": "https://build.fhir.org/Bundle.xsd"
+                "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
               }
             }
           }
@@ -81,9 +81,9 @@
           "default": {
             "description": "Error, with details",
             "content": {
-              "application/fhir+xml": {
+              "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/OperationOutcome.xsd"
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
                 }
               }
             }
@@ -99,9 +99,9 @@
               }
             },
             "content": {
-              "application/fhir+xml": {
+              "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/Bundle.xsd"
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
                 }
               }
             }
