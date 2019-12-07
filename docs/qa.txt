@@ -3,18 +3,20 @@
 
 err = 30, warn = 0, info = 0
 IG Publisher Version: v1.0.15-SNAPSHOT
-Generated Sat Dec 07 09:06:38 GMT 2019. FHIR version 3.0.2 for hl7.fhir.uk.api# (canonical = https://fhir.hl7.org.uk/STU3)
+Generated Sat Dec 07 09:41:56 GMT 2019. FHIR version 3.0.2 for hl7.fhir.uk.api# (canonical = https://fhir.hl7.org.uk/STU3)
 
- Build Errors : 3 / 0
+ Build Errors : 5 / 0
  /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/careconnect-api-ig : 3 / 0
  /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/capabilitystatement/edms : 5 / 0
  /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/capabilitystatement/messaging : 0 / 0
  /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/capabilitystatement/pas : 7 / 0
 </table>
 == n/a ==
-ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 121, column 8: The link 'background.html' for "Background" cannot be resolved
-ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 125, column 8: The link 'spec.html' for "Detailed Specification" cannot be resolved
-ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 128, column 8: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 122, column 8: The link 'background.html' for "Background" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 126, column 8: The link 'spec.html' for "Detailed Specification" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 129, column 8: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/oauth2-redirect.html: The html source does not contain the publish box <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader--> (see note at http://wiki.hl7.org/index.php?title=FHIR_Implementation_Guide_Publishing_Requirements#HL7_HTML_Standards_considerations)
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/swagger.html: The html source does not contain the publish box
 == /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/careconnect-api-ig.xml ==
 ERROR: /f:ImplementationGuide: Undefined element 'title'
 ERROR: /f:ImplementationGuide: Undefined element 'packageId'
