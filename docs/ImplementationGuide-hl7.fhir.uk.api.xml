@@ -10,7 +10,7 @@
   <name value="HL7 UK FHIR API"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2019-12-07T15:32:56+00:00"/>
+  <date value="2019-12-07T15:49:25+00:00"/>
   <publisher value="HL7 UK"/>
   <contact>
     <telecom>
@@ -31,6 +31,11 @@
     <title value="Table of Contents"/>
     <kind value="page"/>
     <page>
+      <source value="index.html"/>
+      <title value="Example API Documentation (Implementation Guide)"/>
+      <kind value="resource"/>
+    </page>
+    <page>
       <source value="swagger-pas.html"/>
       <title value="OpenAPI PAS"/>
       <kind value="page"/>
@@ -43,11 +48,6 @@
     <page>
       <source value="swagger-messaging.html"/>
       <title value="OpenAPI Messging"/>
-      <kind value="page"/>
-    </page>
-    <page>
-      <source value="index.html"/>
-      <title value="CareConnect API"/>
       <kind value="page"/>
     </page>
   </page>

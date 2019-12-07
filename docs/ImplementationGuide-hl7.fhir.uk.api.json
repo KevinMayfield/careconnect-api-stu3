@@ -9,7 +9,7 @@
   "name": "HL7 UK FHIR API",
   "status": "draft",
   "experimental": false,
-  "date": "2019-12-07T15:32:56+00:00",
+  "date": "2019-12-07T15:49:25+00:00",
   "publisher": "HL7 UK",
   "contact": [
     {
@@ -39,6 +39,11 @@
     "kind": "page",
     "page": [
       {
+        "source": "index.html",
+        "title": "Example API Documentation (Implementation Guide)",
+        "kind": "resource"
+      },
+      {
         "source": "swagger-pas.html",
         "title": "OpenAPI PAS",
         "kind": "page"
@@ -51,11 +56,6 @@
       {
         "source": "swagger-messaging.html",
         "title": "OpenAPI Messging",
-        "kind": "page"
-      },
-      {
-        "source": "index.html",
-        "title": "CareConnect API",
         "kind": "page"
       }
     ]

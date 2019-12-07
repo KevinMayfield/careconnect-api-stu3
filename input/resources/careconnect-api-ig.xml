@@ -65,6 +65,11 @@
       <title value="Table of Contents"/>
       <generation value="html"/>
       <page>
+        <nameUrl value="index.html"/>
+        <title value="Example API Documentation (Implementation Guide)"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="swagger-pas.html"/>
         <title value="OpenAPI PAS"/>
         <generation value="html"/>
@@ -79,11 +84,7 @@
         <title value="OpenAPI Messging"/>
         <generation value="html"/>
       </page>
-      <page>
-        <nameUrl value="index.html"/>
-        <title value="CareConnect API"/>
-        <generation value="html"/>
-      </page>
+
     </page>
   </definition>
 </ImplementationGuide>
