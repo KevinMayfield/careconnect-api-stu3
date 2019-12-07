@@ -1,0 +1,25 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+    <id value="messaging"/>
+    <version value="3.0.0"/>
+    <name value="HL7 UK TIE API Capability Statement"/>
+    <status value="active"/>
+    <publisher value="HL7 UK"/>
+    <description value="Minimal conformance requirements for a TIE Server exposing a FHIR RESTful API"/>
+    <kind value="instance"/>
+    <fhirVersion value="3.0.2"/>
+    <acceptUnknown value="extensions"/>
+    <format value="application/fhir+xml"/>
+    <rest>
+        <mode value="server"/>
+        <resource>
+            <type value="Bundle"/>
+            <profile>
+                <reference value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+            </profile>
+            <interaction>
+                <code value="create"/>
+            </interaction>
+            <conditionalUpdate value="false"/>
+        </resource>
+    </rest>
+</CapabilityStatement>

@@ -1,0 +1,221 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+    <id value="edms"/>
+    <version value="3.0.0"/>
+    <name value="HL7 UK EDMS API Capability Statement"/>
+    <status value="active"/>
+    <publisher value="HL7 UK"/>
+    <description value="Minimal conformance requirements for a EDMS Server exposing a FHIR RESTful API"/>
+    <kind value="instance"/>
+    <fhirVersion value="3.0.2"/>
+    <acceptUnknown value="extensions"/>
+    <format value="application/fhir+xml"/>
+    <format value="application/fhir+json"/>
+    <rest>
+        <mode value="server"/>
+        <resource>
+            <type value="DocumentReference"/>
+            <profile>
+                <reference value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <code value="search-type"/>
+            </interaction>
+            <conditionalUpdate value="true"/>
+            <searchParam>
+                <name value="_id"/>
+                <type value="string"/>
+                <documentation value="The ID of the resource"/>
+            </searchParam>
+            <searchParam>
+                <name value="identifier"/>
+                <type value="token"/>
+                <documentation value="Master Version Specific Identifier"/>
+            </searchParam>
+            <searchParam>
+                <name value="patient"/>
+                <type value="reference"/>
+                <documentation value="Who/what is the subject of the document"/>
+            </searchParam>
+            <searchParam>
+                <name value="period"/>
+                <type value="date"/>
+                <documentation value="Time of service that is being documented"/>
+            </searchParam>
+            <searchParam>
+                <name value="setting"/>
+                <type value="token"/>
+                <documentation value="Additional details about where the content was created (e.g. clinical specialty)"/>
+            </searchParam>
+            <searchParam>
+                <name value="type"/>
+                <type value="token"/>
+                <documentation value="Kind of document (LOINC if possible)"/>
+            </searchParam>
+        </resource>
+        <resource>
+            <type value="Organization"/>
+            <profile>
+                <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <code value="search-type"/>
+            </interaction>
+            <conditionalUpdate value="true"/>
+            <searchParam>
+                <name value="_id"/>
+                <type value="string"/>
+                <documentation value="The ID of the resource"/>
+            </searchParam>
+            <searchParam>
+                <name value="address-postalcode"/>
+                <type value="string"/>
+                <documentation value="A postal code specified in an address"/>
+            </searchParam>
+            <searchParam>
+                <name value="identifier"/>
+                <type value="token"/>
+                <documentation value="Any identifier for the organization (not the accreditation issuer's identifier)"/>
+            </searchParam>
+            <searchParam>
+                <name value="name"/>
+                <type value="string"/>
+                <documentation value="A portion of the organization's name or alias"/>
+            </searchParam>
+        </resource>
+        <resource>
+            <type value="Patient"/>
+            <profile>
+                <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <code value="search-type"/>
+            </interaction>
+            <conditionalUpdate value="true"/>
+            <searchParam>
+                <name value="_id"/>
+                <type value="string"/>
+                <documentation value="The ID of the resource"/>
+            </searchParam>
+            <searchParam>
+                <name value="address-postalcode"/>
+                <type value="string"/>
+                <documentation value="A postalCode specified in an address"/>
+            </searchParam>
+            <searchParam>
+                <name value="birthdate"/>
+                <type value="date"/>
+                <documentation value="The patient's date of birth"/>
+            </searchParam>
+            <searchParam>
+                <name value="email"/>
+                <type value="string"/>
+                <documentation value="A value in an email contact"/>
+            </searchParam>
+            <searchParam>
+                <name value="family"/>
+                <type value="string"/>
+                <documentation value="A portion of the family name of the patient"/>
+            </searchParam>
+            <searchParam>
+                <name value="gender"/>
+                <type value="string"/>
+                <documentation value="Gender of the patient"/>
+            </searchParam>
+            <searchParam>
+                <name value="given"/>
+                <type value="string"/>
+                <documentation value="A portion of the given name of the patient"/>
+            </searchParam>
+            <searchParam>
+                <name value="identifier"/>
+                <type value="token"/>
+                <documentation value="A patient identifier"/>
+            </searchParam>
+            <searchParam>
+                <name value="name"/>
+                <type value="string"/>
+                <documentation value="A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"/>
+            </searchParam>
+            <searchParam>
+                <name value="phone"/>
+                <type value="string"/>
+                <documentation value="A value in a phone contact"/>
+            </searchParam>
+        </resource>
+        <resource>
+            <type value="Practitioner"/>
+            <profile>
+                <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <code value="search-type"/>
+            </interaction>
+            <conditionalUpdate value="true"/>
+            <searchParam>
+                <name value="_id"/>
+                <type value="string"/>
+                <documentation value="The ID of the resource"/>
+            </searchParam>
+            <searchParam>
+                <name value="address-postalcode"/>
+                <type value="string"/>
+                <documentation value="A postalCode specified in an address"/>
+            </searchParam>
+            <searchParam>
+                <name value="identifier"/>
+                <type value="token"/>
+                <documentation value="A practitioner's Identifier"/>
+            </searchParam>
+            <searchParam>
+                <name value="name"/>
+                <type value="string"/>
+                <documentation value="A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"/>
+            </searchParam>
+        </resource>
+        <resource>
+            <type value="PractitionerRole"/>
+            <profile>
+                <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <code value="search-type"/>
+            </interaction>
+            <conditionalUpdate value="true"/>
+            <searchParam>
+                <name value="_id"/>
+                <type value="string"/>
+                <documentation value="The ID of the resource"/>
+            </searchParam>
+            <searchParam>
+                <name value="identifier"/>
+                <type value="token"/>
+                <documentation value="A practitioner's Identifier"/>
+            </searchParam>
+            <searchParam>
+                <name value="organization"/>
+                <type value="reference"/>
+                <documentation value="The identity of the organization the practitioner represents / acts on behalf of"/>
+            </searchParam>
+            <searchParam>
+                <name value="practitioner"/>
+                <type value="reference"/>
+                <documentation value="Practitioner that is able to provide the defined services for the organation"/>
+            </searchParam>
+        </resource>
+    </rest>
+</CapabilityStatement>

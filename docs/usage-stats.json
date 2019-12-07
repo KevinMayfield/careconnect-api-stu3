@@ -1,0 +1,8 @@
+{
+  "package": "hl7.fhir.uk.api",
+  "fhirVersion": "3.0.2",
+  "jurisdiction": "826",
+  "extensions": [],
+  "profiles": {},
+  "usage": {}
+}

@@ -1,0 +1,274 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "edms",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HL7 UK EDMS API Capability Statement</h2><div><p>Minimal conformance requirements for a EDMS Server exposing a FHIR RESTful API</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>DocumentReference</td><td><a href=\"https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1\">https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Patient</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Practitioner</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>"
+  },
+  "url": "https://fhir.hl7.org.uk/STU3/CapabilityStatement/edms",
+  "version": "3.0.0",
+  "name": "HL7 UK EDMS API Capability Statement",
+  "status": "active",
+  "date": "2019-12-07T09:06:26+00:00",
+  "publisher": "HL7 UK",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/Special/committees/[something]"
+        }
+      ]
+    }
+  ],
+  "description": "Minimal conformance requirements for a EDMS Server exposing a FHIR RESTful API",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "826"
+        }
+      ]
+    }
+  ],
+  "kind": "instance",
+  "fhirVersion": "3.0.2",
+  "acceptUnknown": "extensions",
+  "format": [
+    "application/fhir+xml",
+    "application/fhir+json"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "resource": [
+        {
+          "type": "DocumentReference",
+          "profile": {
+            "reference": "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1"
+          },
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "conditionalUpdate": true,
+          "searchParam": [
+            {
+              "name": "_id",
+              "type": "string",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "Master Version Specific Identifier"
+            },
+            {
+              "name": "patient",
+              "type": "reference",
+              "documentation": "Who/what is the subject of the document"
+            },
+            {
+              "name": "period",
+              "type": "date",
+              "documentation": "Time of service that is being documented"
+            },
+            {
+              "name": "setting",
+              "type": "token",
+              "documentation": "Additional details about where the content was created (e.g. clinical specialty)"
+            },
+            {
+              "name": "type",
+              "type": "token",
+              "documentation": "Kind of document (LOINC if possible)"
+            }
+          ]
+        },
+        {
+          "type": "Organization",
+          "profile": {
+            "reference": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"
+          },
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "conditionalUpdate": true,
+          "searchParam": [
+            {
+              "name": "_id",
+              "type": "string",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "address-postalcode",
+              "type": "string",
+              "documentation": "A postal code specified in an address"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "Any identifier for the organization (not the accreditation issuer's identifier)"
+            },
+            {
+              "name": "name",
+              "type": "string",
+              "documentation": "A portion of the organization's name or alias"
+            }
+          ]
+        },
+        {
+          "type": "Patient",
+          "profile": {
+            "reference": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"
+          },
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "conditionalUpdate": true,
+          "searchParam": [
+            {
+              "name": "_id",
+              "type": "string",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "address-postalcode",
+              "type": "string",
+              "documentation": "A postalCode specified in an address"
+            },
+            {
+              "name": "birthdate",
+              "type": "date",
+              "documentation": "The patient's date of birth"
+            },
+            {
+              "name": "email",
+              "type": "string",
+              "documentation": "A value in an email contact"
+            },
+            {
+              "name": "family",
+              "type": "string",
+              "documentation": "A portion of the family name of the patient"
+            },
+            {
+              "name": "gender",
+              "type": "string",
+              "documentation": "Gender of the patient"
+            },
+            {
+              "name": "given",
+              "type": "string",
+              "documentation": "A portion of the given name of the patient"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "A patient identifier"
+            },
+            {
+              "name": "name",
+              "type": "string",
+              "documentation": "A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"
+            },
+            {
+              "name": "phone",
+              "type": "string",
+              "documentation": "A value in a phone contact"
+            }
+          ]
+        },
+        {
+          "type": "Practitioner",
+          "profile": {
+            "reference": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"
+          },
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "conditionalUpdate": true,
+          "searchParam": [
+            {
+              "name": "_id",
+              "type": "string",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "address-postalcode",
+              "type": "string",
+              "documentation": "A postalCode specified in an address"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "A practitioner's Identifier"
+            },
+            {
+              "name": "name",
+              "type": "string",
+              "documentation": "A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"
+            }
+          ]
+        },
+        {
+          "type": "PractitionerRole",
+          "profile": {
+            "reference": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1"
+          },
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "conditionalUpdate": true,
+          "searchParam": [
+            {
+              "name": "_id",
+              "type": "string",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "A practitioner's Identifier"
+            },
+            {
+              "name": "organization",
+              "type": "reference",
+              "documentation": "The identity of the organization the practitioner represents / acts on behalf of"
+            },
+            {
+              "name": "practitioner",
+              "type": "reference",
+              "documentation": "Practitioner that is able to provide the defined services for the organation"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

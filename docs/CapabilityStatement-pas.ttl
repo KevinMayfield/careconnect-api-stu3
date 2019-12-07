@@ -1,0 +1,395 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.hl7.org.uk/STU3/CapabilityStatement/pas> a fhir:CapabilityStatement;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "pas"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HL7 UK PAS API Capability Statement</h2><div><p>Minimal conformance requirements for a PAS Server exposing a FHIR RESTful API</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>Appointment</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Appointment-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Appointment-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Encounter</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Patient</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Practitioner</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Procedure</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>"
+  ];
+  fhir:CapabilityStatement.url [ fhir:value "https://fhir.hl7.org.uk/STU3/CapabilityStatement/pas"];
+  fhir:CapabilityStatement.version [ fhir:value "3.0.0"];
+  fhir:CapabilityStatement.name [ fhir:value "HL7 UK PAS API Capability Statement"];
+  fhir:CapabilityStatement.status [ fhir:value "active"];
+  fhir:CapabilityStatement.date [ fhir:value "2019-12-07T09:06:26+00:00"^^xsd:dateTime];
+  fhir:CapabilityStatement.publisher [ fhir:value "HL7 UK"];
+  fhir:CapabilityStatement.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "other" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7.org/Special/committees/[something]" ]
+     ]
+  ];
+  fhir:CapabilityStatement.description [ fhir:value "Minimal conformance requirements for a PAS Server exposing a FHIR RESTful API"];
+  fhir:CapabilityStatement.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "826" ]
+     ]
+  ];
+  fhir:CapabilityStatement.kind [ fhir:value "instance"];
+  fhir:CapabilityStatement.fhirVersion [ fhir:value "3.0.2"];
+  fhir:CapabilityStatement.acceptUnknown [ fhir:value "extensions"];
+  fhir:CapabilityStatement.format [
+     fhir:value "application/fhir+xml";
+     fhir:index 0
+  ], [
+     fhir:value "application/fhir+json";
+     fhir:index 1
+  ];
+  fhir:CapabilityStatement.rest [
+     fhir:index 0;
+     fhir:CapabilityStatement.rest.mode [ fhir:value "server" ];
+     fhir:CapabilityStatement.rest.resource [
+       fhir:index 0;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Appointment" ];
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:link <https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Appointment-1>;
+         fhir:Reference.reference [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Appointment-1" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.conditionalUpdate [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The ID of the resource" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "An Identifier of the Appointment" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Encounter" ];
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:link <https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1>;
+         fhir:Reference.reference [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.conditionalUpdate [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.searchInclude [
+         fhir:value "*";
+         fhir:index 0
+       ], [
+         fhir:value "Composition:encounter";
+         fhir:index 1
+       ], [
+         fhir:value "Condition:context";
+         fhir:index 2
+       ], [
+         fhir:value "DocumentReference:context";
+         fhir:index 3
+       ], [
+         fhir:value "Encounter:location";
+         fhir:index 4
+       ], [
+         fhir:value "Encounter:part-of";
+         fhir:index 5
+       ], [
+         fhir:value "Encounter:participant";
+         fhir:index 6
+       ], [
+         fhir:value "Encounter:patient";
+         fhir:index 7
+       ], [
+         fhir:value "Encounter:service-provider";
+         fhir:index 8
+       ], [
+         fhir:value "Immunization:encounter";
+         fhir:index 9
+       ], [
+         fhir:value "MedicationRequest:context";
+         fhir:index 10
+       ], [
+         fhir:value "Observation:context";
+         fhir:index 11
+       ], [
+         fhir:value "Procedure:context";
+         fhir:index 12
+       ], [
+         fhir:value "ReferralRequest:encounter";
+         fhir:index 13
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The ID of the resource" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "A date within the period the Encounter lasted" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "episodeofcare" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Episode(s) of care that this encounter should be recorded against" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Identifier(s) by which this encounter is known" ]
+       ], [
+         fhir:index 4;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "patient" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The patient ro group present at the encounter" ]
+       ], [
+         fhir:index 5;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "status" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "planned | arrived | triaged | in-progress | onleave | finished | cancelled +" ]
+       ], [
+         fhir:index 6;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "type" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Specific type of encounter" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Organization" ];
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:link <https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1>;
+         fhir:Reference.reference [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.conditionalUpdate [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The ID of the resource" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "address-postalcode" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "A postal code specified in an address" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Any identifier for the organization (not the accreditation issuer's identifier)" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "A portion of the organization's name or alias" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Patient" ];
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:link <https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1>;
+         fhir:Reference.reference [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.conditionalUpdate [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The ID of the resource" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "address-postalcode" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "A postalCode specified in an address" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "birthdate" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The patient's date of birth" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "email" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "A value in an email contact" ]
+       ], [
+         fhir:index 4;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "family" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "A portion of the family name of the patient" ]
+       ], [
+         fhir:index 5;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "gender" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Gender of the patient" ]
+       ], [
+         fhir:index 6;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "given" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "A portion of the given name of the patient" ]
+       ], [
+         fhir:index 7;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "A patient identifier" ]
+       ], [
+         fhir:index 8;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text" ]
+       ], [
+         fhir:index 9;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "phone" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "A value in a phone contact" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Practitioner" ];
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:link <https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1>;
+         fhir:Reference.reference [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.conditionalUpdate [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The ID of the resource" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "address-postalcode" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "A postalCode specified in an address" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "A practitioner's Identifier" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "PractitionerRole" ];
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:link <https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1>;
+         fhir:Reference.reference [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.conditionalUpdate [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The ID of the resource" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "A practitioner's Identifier" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "organization" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The identity of the organization the practitioner represents / acts on behalf of" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "practitioner" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Practitioner that is able to provide the defined services for the organation" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Procedure" ];
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:link <https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1>;
+         fhir:Reference.reference [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.conditionalUpdate [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The ID of the resource" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Date/Period the procedure was performed" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "A unique identifier for a procedure" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "patient" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Search by subject - a patient" ]
+       ], [
+         fhir:index 4;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "subject" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Search by subject" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.hl7.org.uk/STU3/CapabilityStatement/pas.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
