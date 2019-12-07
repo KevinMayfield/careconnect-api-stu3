@@ -59,7 +59,7 @@
     "/Bundle": {
       "summary": "Manager for resources of type Bundle",
       "description": "The Manager for resources of type Bundle: provides services to manage the collection of all the Bundle instances",
-      "put": {
+      "post": {
         "summary": "Create a new resource",
         "operationId": "createBundle",
         "requestBody": {
@@ -67,6 +67,9 @@
           "required": true,
           "content": {
             "application/fhir+json": {
+
+            },
+            "application/fhir+xml": {
 
             }
           }
@@ -92,7 +95,8 @@
             },
             "content": {
               "application/fhir+json": {
-
+              },
+              "application/fhir+xml": {
               }
             }
           }

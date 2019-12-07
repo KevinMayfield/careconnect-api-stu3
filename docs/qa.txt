@@ -3,7 +3,7 @@
 
 err = 30, warn = 0, info = 0
 IG Publisher Version: v1.0.15-SNAPSHOT
-Generated Sat Dec 07 15:24:45 GMT 2019. FHIR version 3.0.2 for hl7.fhir.uk.api# (canonical = https://fhir.hl7.org.uk/STU3)
+Generated Sat Dec 07 15:33:09 GMT 2019. FHIR version 3.0.2 for hl7.fhir.uk.api# (canonical = https://fhir.hl7.org.uk/STU3)
 
  Build Errors : 3 / 0
  /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/capabilitystatement/edms : 5 / 0

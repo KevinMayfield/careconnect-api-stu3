@@ -2,7 +2,7 @@
   "url": "https://fhir.hl7.org.uk/STU3/ImplementationGuide/fhir-api",
   "name": "HL7 UK FHIR API",
   "package-id": "hl7.fhir.uk.api",
-  "date": "Sat, 07 Dec, 2019 15:24:32 +0000",
+  "date": "Sat, 07 Dec, 2019 15:32:56 +0000",
   "errs": 30,
   "warnings": 0,
   "hints": 0,
