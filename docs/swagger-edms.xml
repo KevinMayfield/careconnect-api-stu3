@@ -12,7 +12,7 @@
     window.onload = function() {
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
-        url: "https://project-wildfyre.github.io/fhir-api/edms.openapi.json",
+        url: "https://project-wildfyre.github.io/fhir-api/edms-noschema.openapi.json",
         dom_id: '#swagger-ui',
         deepLinking: true,
         presets: [

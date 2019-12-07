@@ -1,8 +1,8 @@
 ﻿{
   "openapi": "3.0.2",
   "info": {
-    "title": "HL7 UK EDMS API Capability Statement",
-    "description": "Minimal conformance requirements for a EDMS Server exposing a FHIR RESTful API",
+    "title": "HL7 UK PAS API Capability Statement",
+    "description": "Minimal conformance requirements for a PAS Server exposing a FHIR RESTful API",
     "license": {
       "url": "http://spdx.org/licenses/CC0-1.0.html"
     },
@@ -12,7 +12,7 @@
     }
   },
   "externalDocs": {
-    "url": "https://fhir.hl7.org.uk/STU3/CapabilityStatement/edms",
+    "url": "https://fhir.hl7.org.uk/STU3/CapabilityStatement/pas",
     "description": "FHIR CapabilityStatement"
   },
   "paths": {
@@ -27,9 +27,7 @@
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
+
               }
             }
           },
@@ -37,9 +35,7 @@
             "description": "the capbility statement",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/CapabilityStatement"
-                }
+
               }
             }
           }
@@ -60,20 +56,18 @@
         ]
       }
     },
-    "/DocumentReference": {
-      "summary": "manage the collection of resources of type DocumentReference",
-      "description": "Access to services to manage the collection of all resources of type DocumentReference",
+    "/Appointment": {
+      "summary": "manage the collection of resources of type Appointment",
+      "description": "Access to services to manage the collection of all resources of type Appointment",
       "get": {
-        "summary": "Search all resources of type DocumentReference based on a set of criteria",
-        "operationId": "searchDocumentReference",
+        "summary": "Search all resources of type Appointment based on a set of criteria",
+        "operationId": "searchAppointment",
         "responses": {
           "default": {
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
+
               }
             }
           },
@@ -81,9 +75,7 @@
             "description": "the resource being returned",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
-                }
+
               }
             }
           }
@@ -112,40 +104,7 @@
           {
             "name": "identifier",
             "in": "query",
-            "description": "Master Version Specific Identifier",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "patient",
-            "in": "query",
-            "description": "Who/what is the subject of the document",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "period",
-            "in": "query",
-            "description": "Time of service that is being documented",
-            "schema": {
-              "type": "string",
-              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
-            }
-          },
-          {
-            "name": "setting",
-            "in": "query",
-            "description": "Additional details about where the content was created (e.g. clinical specialty)",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "type",
-            "in": "query",
-            "description": "Kind of document (LOINC if possible)",
+            "description": "An Identifier of the Appointment",
             "schema": {
               "type": "string"
             }
@@ -153,20 +112,18 @@
         ]
       }
     },
-    "/DocumentReference/{rid}": {
-      "summary": "Read/Write/etc resource instance of type DocumentReference",
-      "description": "Access to services to manage the state of a single resource of type DocumentReference",
+    "/Appointment/{rid}": {
+      "summary": "Read/Write/etc resource instance of type Appointment",
+      "description": "Access to services to manage the state of a single resource of type Appointment",
       "get": {
         "summary": "Read the current state of the resource",
-        "operationId": "readDocumentReference",
+        "operationId": "readAppointment",
         "responses": {
           "default": {
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
+
               }
             }
           },
@@ -182,9 +139,155 @@
             },
             "content": {
               "application/fhir+json": {
+
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/Encounter": {
+      "summary": "manage the collection of resources of type Encounter",
+      "description": "Access to services to manage the collection of all resources of type Encounter",
+      "get": {
+        "summary": "Search all resources of type Encounter based on a set of criteria",
+        "operationId": "searchEncounter",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "content": {
+              "application/fhir+json": {
+
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "name": "_id",
+            "in": "query",
+            "description": "The ID of the resource",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "date",
+            "in": "query",
+            "description": "A date within the period the Encounter lasted",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "episodeofcare",
+            "in": "query",
+            "description": "Episode(s) of care that this encounter should be recorded against",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "identifier",
+            "in": "query",
+            "description": "Identifier(s) by which this encounter is known",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "patient",
+            "in": "query",
+            "description": "The patient ro group present at the encounter",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "description": "planned | arrived | triaged | in-progress | onleave | finished | cancelled +",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "description": "Specific type of encounter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/Encounter/{rid}": {
+      "summary": "Read/Write/etc resource instance of type Encounter",
+      "description": "Access to services to manage the state of a single resource of type Encounter",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readEncounter",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/DocumentReference"
+                  "type": "string"
                 }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+
               }
             }
           }
@@ -219,9 +322,7 @@
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
+
               }
             }
           },
@@ -229,9 +330,7 @@
             "description": "the resource being returned",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
-                }
+
               }
             }
           }
@@ -295,9 +394,7 @@
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
+
               }
             }
           },
@@ -313,9 +410,7 @@
             },
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Organization"
-                }
+
               }
             }
           }
@@ -350,9 +445,7 @@
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
+
               }
             }
           },
@@ -360,9 +453,7 @@
             "description": "the resource being returned",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
-                }
+
               }
             }
           }
@@ -475,9 +566,7 @@
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
+
               }
             }
           },
@@ -493,9 +582,7 @@
             },
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Patient"
-                }
+
               }
             }
           }
@@ -530,9 +617,7 @@
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
+
               }
             }
           },
@@ -540,9 +625,7 @@
             "description": "the resource being returned",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
-                }
+
               }
             }
           }
@@ -606,9 +689,7 @@
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
+
               }
             }
           },
@@ -624,9 +705,7 @@
             },
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Practitioner"
-                }
+
               }
             }
           }
@@ -661,9 +740,7 @@
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
+
               }
             }
           },
@@ -671,9 +748,7 @@
             "description": "the resource being returned",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
-                }
+
               }
             }
           }
@@ -737,9 +812,7 @@
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
+
               }
             }
           },
@@ -755,9 +828,139 @@
             },
             "content": {
               "application/fhir+json": {
+
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/Procedure": {
+      "summary": "manage the collection of resources of type Procedure",
+      "description": "Access to services to manage the collection of all resources of type Procedure",
+      "get": {
+        "summary": "Search all resources of type Procedure based on a set of criteria",
+        "operationId": "searchProcedure",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "content": {
+              "application/fhir+json": {
+
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "name": "_id",
+            "in": "query",
+            "description": "The ID of the resource",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "date",
+            "in": "query",
+            "description": "Date/Period the procedure was performed",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "identifier",
+            "in": "query",
+            "description": "A unique identifier for a procedure",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "patient",
+            "in": "query",
+            "description": "Search by subject - a patient",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "description": "Search by subject",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/Procedure/{rid}": {
+      "summary": "Read/Write/etc resource instance of type Procedure",
+      "description": "Access to services to manage the state of a single resource of type Procedure",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readProcedure",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/PractitionerRole"
+                  "type": "string"
                 }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+
               }
             }
           }

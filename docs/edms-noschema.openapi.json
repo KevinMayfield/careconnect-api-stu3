@@ -27,9 +27,7 @@
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
+                
               }
             }
           },
@@ -37,9 +35,7 @@
             "description": "the capbility statement",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/CapabilityStatement"
-                }
+                
               }
             }
           }
@@ -71,9 +67,6 @@
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
               }
             }
           },
@@ -81,9 +74,6 @@
             "description": "the resource being returned",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
-                }
               }
             }
           }
@@ -164,9 +154,6 @@
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
               }
             }
           },
@@ -182,9 +169,7 @@
             },
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/DocumentReference"
-                }
+
               }
             }
           }
@@ -219,9 +204,7 @@
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
+
               }
             }
           },
@@ -229,9 +212,7 @@
             "description": "the resource being returned",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
-                }
+
               }
             }
           }
@@ -295,9 +276,7 @@
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
+
               }
             }
           },
@@ -313,9 +292,7 @@
             },
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Organization"
-                }
+
               }
             }
           }
@@ -350,9 +327,7 @@
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
+
               }
             }
           },
@@ -360,9 +335,7 @@
             "description": "the resource being returned",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
-                }
+
               }
             }
           }
@@ -475,9 +448,7 @@
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
+
               }
             }
           },
@@ -493,9 +464,7 @@
             },
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Patient"
-                }
+
               }
             }
           }
@@ -530,9 +499,7 @@
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
+
               }
             }
           },
@@ -540,9 +507,7 @@
             "description": "the resource being returned",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
-                }
+
               }
             }
           }
@@ -606,9 +571,7 @@
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
+
               }
             }
           },
@@ -624,9 +587,7 @@
             },
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Practitioner"
-                }
+
               }
             }
           }
@@ -661,9 +622,7 @@
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
+
               }
             }
           },
@@ -671,9 +630,6 @@
             "description": "the resource being returned",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
-                }
               }
             }
           }
@@ -737,9 +693,6 @@
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
               }
             }
           },
@@ -755,9 +708,7 @@
             },
             "content": {
               "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/PractitionerRole"
-                }
+
               }
             }
           }
