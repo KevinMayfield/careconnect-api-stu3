@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
-<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
   <id value="hl7.fhir.uk.api"/>
   <url value="https://fhir.hl7.org.uk/STU3/ImplementationGuide/fhir-api"/>
   <name value="HL7 UK FHIR API"/>
@@ -64,6 +64,16 @@
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
       <generation value="html"/>
+      <page>
+        <nameUrl value="swagger-pas.html"/>
+        <title value="OpenAPI PAS"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="swagger-edms.html"/>
+        <title value="OpenAPI EDMS"/>
+        <generation value="html"/>
+      </page>
       <page>
         <nameUrl value="index.html"/>
         <title value="CareConnect API"/>

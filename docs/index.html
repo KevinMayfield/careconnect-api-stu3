@@ -36,8 +36,8 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"1"}
-    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
         
@@ -65,7 +65,15 @@
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">API Home</a></li>
-  <li><a href="swagger.html">OpenApi</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">OpenAPI<b class="caret">
+    </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="swagger-pas.html">PAS</a></li>
+      <li><a href="swagger-edms.html">EDMS</a></li>
+    </ul>
+  </li>
   <li><a href="toc.html">Table of Contents</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
 </ul>      
@@ -118,14 +126,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     The main sections of this IG are:
   </p>
   <ul>
-    <li><a name="a517a3fa-716c-4ad1-aec2-e7dc964ea66a">​</a>
+    <li><a name="27b899e5-b228-4fe1-a827-064a1591577d">​</a>
       <a href="background.html">Background</a> - provides business context for the implementation guide and information that implementers should be
       familiar with before reading the remainder of the IG.  There could be multiple pages for this.
     </li>
-    <li><a name="832186aa-3fa9-4696-88c0-2f0a3c676444">​</a>
+    <li><a name="f722c703-82c2-4f14-90e9-49145708d8b0">​</a>
       <a href="spec.html">Detailed Specification</a> - The actual stuff implementers are expected to do.  (Could be multiple pages for this.)
     </li>
-    <li><a name="9bb61d01-5b32-44a0-b809-98701d393b92">​</a>
+    <li><a name="e051d056-2631-499b-8ccf-1c9cb5876bfc">​</a>
       <a href="downloads.html">Downloads</a> - Allows downloading a copy of this implementation guide and other useful information
     </li>
   </ul>
@@ -141,7 +149,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]"></a>HL7 UK.  Package hl7.fhir.uk.api# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Sat, Dec 7, 2019 09:41+0000">2019-12-07</span>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]"></a>HL7 UK.  Package hl7.fhir.uk.api# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Sat, Dec 7, 2019 11:48+0000">2019-12-07</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
