@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="hl7.fhir.uk.api"/>
+  <id value="mayfield-is.fhir.api"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>HL7 UK FHIR API</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.hl7.org.uk/STU3/ImplementationGuide/hl7.fhir.uk.api</pre><div><p>A brief description of what MyIG is about (probably the same text as in your readme)</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>UK FHIR API</h2><p>The official URL for this implementation guide is: </p><pre>https://mayfield-is.co.uk/STU3/ImplementationGuide/fhir-api</pre><div><p>Demonstration of FHIR Implementation Guide to support API Management</p>
 </div></div>
   </text>
-  <url value="https://fhir.hl7.org.uk/STU3/ImplementationGuide/hl7.fhir.uk.api"/>
-  <name value="HL7 UK FHIR API"/>
+  <url value="https://mayfield-is.co.uk/STU3/ImplementationGuide/fhir-api"/>
+  <name value="UK FHIR API"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2019-12-07T15:49:25+00:00"/>
-  <publisher value="HL7 UK"/>
+  <date value="2019-12-10T10:43:54+00:00"/>
+  <publisher value="mayfield-is"/>
   <contact>
     <telecom>
-      <system value="other"/>
-      <value value="http://hl7.org/Special/committees/[something]"/>
+      <system value="email"/>
+      <value value="kevin.mayfield@mayfield-is.co.uk"/>
     </telecom>
   </contact>
-  <description value="A brief description of what MyIG is about (probably the same text as in your readme)"/>
+  <description value="Demonstration of FHIR Implementation Guide to support API Management"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>

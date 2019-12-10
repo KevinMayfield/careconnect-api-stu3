@@ -1,7 +1,7 @@
 ﻿{
   "openapi": "3.0.2",
   "info": {
-    "title": "HL7 UK TIE API Capability Statement",
+    "title": "TIE API Capability Statement",
     "description": "Minimal conformance requirements for a TIE Server exposing a FHIR RESTful API",
     "license": {
       "url": "http://spdx.org/licenses/CC0-1.0.html"

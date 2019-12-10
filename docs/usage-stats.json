@@ -1,5 +1,5 @@
 {
-  "package": "hl7.fhir.uk.api",
+  "package": "mayfield-is.fhir.api",
   "fhirVersion": "3.0.2",
   "jurisdiction": "826",
   "extensions": [],

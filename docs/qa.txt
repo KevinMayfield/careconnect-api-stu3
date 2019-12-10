@@ -1,25 +1,43 @@
-﻿HL7 UK FHIR API : Validation Results
+﻿UK FHIR API : Validation Results
 =========================================
 
-err = 30, warn = 0, info = 0
-IG Publisher Version: v1.0.15-SNAPSHOT
-Generated Sat Dec 07 15:49:41 GMT 2019. FHIR version 3.0.2 for hl7.fhir.uk.api# (canonical = https://fhir.hl7.org.uk/STU3)
+err = 36, warn = 0, info = 0
+IG Publisher Version: v1.0.17-SNAPSHOT
+Generated Tue Dec 10 10:44:08 GMT 2019. FHIR version 3.0.2 for mayfield-is.fhir.api# (canonical = https://mayfield-is.co.uk/STU3)
 
- Build Errors : 0 / 0
- /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/capabilitystatement/edms : 5 / 0
- /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/capabilitystatement/messaging : 0 / 0
- /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/capabilitystatement/pas : 7 / 0
- /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/careconnect-api-ig : 3 / 0
+ Build Errors : 18 / 0
+ C:\Development\kevinmayfield\fhir-api\input\resources\capabilitystatement\edms : 5 / 0
+ C:\Development\kevinmayfield\fhir-api\input\resources\capabilitystatement\messaging : 0 / 0
+ C:\Development\kevinmayfield\fhir-api\input\resources\capabilitystatement\pas : 7 / 0
+ C:\Development\kevinmayfield\fhir-api\input\resources\careconnect-api-ig : 6 / 0
 </table>
 == n/a ==
-== /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/CapabilityStatement/edms.xml ==
+ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-edms.html#/html/body/div/div/div/p/a at Line 151, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-edms.json.html#/html/body/div/div/div/p/a at Line 407, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-edms.ttl.html#/html/body/div/div/div/p/a at Line 361, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-edms.xml.html#/html/body/div/div/div/p/a at Line 386, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-messaging.html#/html/body/div/div/div/p/a at Line 151, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-messaging.json.html#/html/body/div/div/div/p/a at Line 194, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-messaging.ttl.html#/html/body/div/div/div/p/a at Line 200, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-messaging.xml.html#/html/body/div/div/div/p/a at Line 180, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-pas.html#/html/body/div/div/div/p/a at Line 151, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-pas.json.html#/html/body/div/div/div/p/a at Line 497, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-pas.ttl.html#/html/body/div/div/div/p/a at Line 446, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-pas.xml.html#/html/body/div/div/div/p/a at Line 469, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: C:\Development\kevinmayfield\fhir-api\output\artifacts.html#/html/body/div/div/div/p/a at Line 163, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: C:\Development\kevinmayfield\fhir-api\output\index.html#/html/body/div/div/div/p/a at Line 134, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: C:\Development\kevinmayfield\fhir-api\output\swagger-edms.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: C:\Development\kevinmayfield\fhir-api\output\swagger-messaging.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: C:\Development\kevinmayfield\fhir-api\output\swagger-pas.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: C:\Development\kevinmayfield\fhir-api\output\toc.html#/html/body/div/div/div/p/a at Line 124, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+== C:\Development\kevinmayfield\fhir-api\input\resources\CapabilityStatement\edms.xml ==
 ERROR: CapabilityStatement/edms: CapabilityStatement.rest[0].resource[0].profile: Unable to resolve resource 'https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1'
 ERROR: CapabilityStatement/edms: CapabilityStatement.rest[0].resource[1].profile: Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1'
 ERROR: CapabilityStatement/edms: CapabilityStatement.rest[0].resource[2].profile: Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1'
 ERROR: CapabilityStatement/edms: CapabilityStatement.rest[0].resource[3].profile: Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1'
 ERROR: CapabilityStatement/edms: CapabilityStatement.rest[0].resource[4].profile: Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1'
-== /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/CapabilityStatement/messaging.xml ==
-== /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/CapabilityStatement/pas.xml ==
+== C:\Development\kevinmayfield\fhir-api\input\resources\CapabilityStatement\messaging.xml ==
+== C:\Development\kevinmayfield\fhir-api\input\resources\CapabilityStatement\pas.xml ==
 ERROR: CapabilityStatement/pas: CapabilityStatement.rest[0].resource[0].profile: Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Appointment-1'
 ERROR: CapabilityStatement/pas: CapabilityStatement.rest[0].resource[1].profile: Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1'
 ERROR: CapabilityStatement/pas: CapabilityStatement.rest[0].resource[2].profile: Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1'
@@ -27,7 +45,10 @@ ERROR: CapabilityStatement/pas: CapabilityStatement.rest[0].resource[3].profile:
 ERROR: CapabilityStatement/pas: CapabilityStatement.rest[0].resource[4].profile: Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1'
 ERROR: CapabilityStatement/pas: CapabilityStatement.rest[0].resource[5].profile: Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1'
 ERROR: CapabilityStatement/pas: CapabilityStatement.rest[0].resource[6].profile: Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1'
-== /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/careconnect-api-ig.xml ==
+== C:\Development\kevinmayfield\fhir-api\input\resources\careconnect-api-ig.xml ==
 ERROR: /f:ImplementationGuide: Undefined element 'title'
 ERROR: /f:ImplementationGuide: Undefined element 'packageId'
 ERROR: /f:ImplementationGuide: Undefined element 'definition'
+ERROR: https://mayfield-is.co.uk/STU3/ImplementationGuide/fhir-api: Conformance resource C:\Development\kevinmayfield\fhir-api\input\resources\careconnect-api-ig.xml - the canonical URL (https://mayfield-is.co.uk/STU3/ImplementationGuide/mayfield-is.fhir.api) does not match the URL (https://mayfield-is.co.uk/STU3/ImplementationGuide/fhir-api)
+ERROR: ImplementationGuide.url: Resource id/url mismatch: mayfield-is.fhir.api/https://mayfield-is.co.uk/STU3/ImplementationGuide/fhir-api
+ERROR: C:\Development\kevinmayfield\fhir-api\input\resources\careconnect-api-ig: URL Mismatch https://mayfield-is.co.uk/STU3/ImplementationGuide/mayfield-is.fhir.api vs https://mayfield-is.co.uk/STU3/ImplementationGuide/fhir-api

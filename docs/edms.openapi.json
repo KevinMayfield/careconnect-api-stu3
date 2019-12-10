@@ -8,11 +8,11 @@
     },
     "version": "3.0.0",
     "contact": {
-      "name": "HL7 UK"
+      "name": "mayfield-is"
     }
   },
   "externalDocs": {
-    "url": "https://fhir.hl7.org.uk/STU3/CapabilityStatement/edms",
+    "url": "https://mayfield-is.co.uk/STU3/CapabilityStatement/edms",
     "description": "FHIR CapabilityStatement"
   },
   "paths": {

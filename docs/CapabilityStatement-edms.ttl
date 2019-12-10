@@ -5,25 +5,25 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://fhir.hl7.org.uk/STU3/CapabilityStatement/edms> a fhir:CapabilityStatement;
+<https://mayfield-is.co.uk/STU3/CapabilityStatement/edms> a fhir:CapabilityStatement;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "edms"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HL7 UK EDMS API Capability Statement</h2><div><p>Minimal conformance requirements for a EDMS Server exposing a FHIR RESTful API</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>DocumentReference</td><td><a href=\"https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1\">https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Patient</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Practitioner</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>"
   ];
-  fhir:CapabilityStatement.url [ fhir:value "https://fhir.hl7.org.uk/STU3/CapabilityStatement/edms"];
+  fhir:CapabilityStatement.url [ fhir:value "https://mayfield-is.co.uk/STU3/CapabilityStatement/edms"];
   fhir:CapabilityStatement.version [ fhir:value "3.0.0"];
   fhir:CapabilityStatement.name [ fhir:value "HL7 UK EDMS API Capability Statement"];
   fhir:CapabilityStatement.status [ fhir:value "active"];
-  fhir:CapabilityStatement.date [ fhir:value "2019-12-07T15:49:25+00:00"^^xsd:dateTime];
-  fhir:CapabilityStatement.publisher [ fhir:value "HL7 UK"];
+  fhir:CapabilityStatement.date [ fhir:value "2019-12-10T10:43:54+00:00"^^xsd:dateTime];
+  fhir:CapabilityStatement.publisher [ fhir:value "mayfield-is"];
   fhir:CapabilityStatement.contact [
      fhir:index 0;
      fhir:ContactDetail.telecom [
        fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "other" ];
-       fhir:ContactPoint.value [ fhir:value "http://hl7.org/Special/committees/[something]" ]
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "kevin.mayfield@mayfield-is.co.uk" ]
      ]
   ];
   fhir:CapabilityStatement.description [ fhir:value "Minimal conformance requirements for a EDMS Server exposing a FHIR RESTful API"];
@@ -270,7 +270,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://fhir.hl7.org.uk/STU3/CapabilityStatement/edms.ttl> a owl:Ontology;
+<https://mayfield-is.co.uk/STU3/CapabilityStatement/edms.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
