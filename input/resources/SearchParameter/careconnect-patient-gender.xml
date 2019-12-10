@@ -1,0 +1,25 @@
+<SearchParameter xmlns="http://hl7.org/fhir">
+    <id value="careconnect-patient-gender"/>
+    <url value="https://fhir.hl7.orguk/STU3/SearchParameter/careconnect-patient-gender"/>
+    <version value="3.0.0"/>
+    <name value="CareConnectPatientGender"/>
+    <derivedFrom value="http://hl7.org/fhir/SearchParameter/individual-gender"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <date value="2019-09-23T19:48:45+10:00"/>
+    <publisher value="Mayfield IS"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.interopen.org"/>
+        </telecom>
+    </contact>
+    <description
+            value="Gender of the patient"/>
+    <code value="gender"/>
+    <base value="Patient"/>
+    <type value="token"/>
+    <expression value="Patient.gender"/>
+    <xpath value="f:Patient/f:gender"/>
+    <xpathUsage value="normal"/>
+</SearchParameter>

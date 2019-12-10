@@ -168,6 +168,7 @@
             </searchParam>
             <searchParam>
                 <name value="gender"/>
+                <definition value="https://fhir.hl7.orguk/STU3/SearchParameter/careconnect-patient-gender"/>
                 <type value="string"/>
                 <documentation value="Gender of the patient"/>
             </searchParam>

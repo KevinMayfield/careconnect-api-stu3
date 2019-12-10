@@ -31,10 +31,11 @@
   <packageId value="mayfield-is.fhir.api"/>
   <!-- This is whatever FHIR version the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
   <fhirVersion value="3.0.2"/>
- <!-- <dependsOn>
+  <dependsOn>
     <uri value="https://fhir.hl7.org.uk/STU3/ImplementationGuide/hl7.uk.base" />
-    <version value="3.0.0"/>
-  </dependsOn> -->
+    <packageId value="hl7.uk.base"/>
+    <version value="dev"/>
+  </dependsOn>
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
@@ -58,6 +59,13 @@
       </reference>
       <name value="Messaging FHIR RESTful Base Conformance"/>
       <description value="Messaging System FHIR RESTful Base Conformance. In acute trusts this API will normally be found on the Trust Integration Engine"/>
+    </resource>
+   <resource>
+      <reference>
+        <reference value="SearchParameter/careconnect-patient-gender"/>
+      </reference>
+      <name value="Patient Gender"/>
+      <description value="Patient Gender description"/>
     </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
@@ -84,7 +92,11 @@
         <title value="OpenAPI Messging"/>
         <generation value="html"/>
       </page>
-
+      <page>
+        <nameUrl value="searchparameters.html"/>
+        <title value="Search Paramters"/>
+        <generation value="markdown"/>
+      </page>
     </page>
   </definition>
 </ImplementationGuide>
