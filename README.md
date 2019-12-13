@@ -1,3 +1,3 @@
-# fhir-api
+# careconnect-api-stu3
 
-Demonstration of API Documentation using a FHIR Implementation Guide. 
+This Implementation Guide is based on the [Care Connect API](https://nhsconnect.github.io/CareConnectAPI/) specification.
