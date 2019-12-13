@@ -1,13 +1,13 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 23, errors = 10, warn = 0, info = 0 -->
+<!-- broken links = 28, errors = 6, warn = 0, info = 0 -->
 <head>
-  <title>UK FHIR API : Validation Results</title>
+  <title>Care Connect API : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
- <h1>Validation Results for UK FHIR API</h1>
- <p>Generated Fri Dec 13 07:36:45 GMT 2019, FHIR version 3.0.2 for mayfield-is.fhir.api# (canonical = <a href="https://mayfield-is.co.uk/STU3">https://mayfield-is.co.uk/STU3</a> (<a href="https://mayfield-is.co.uk/STU3/history.html">history</a>))</p>
+ <h1>Validation Results for Care Connect API</h1>
+ <p>Generated Fri Dec 13 08:40:50 GMT 2019, FHIR version 3.0.2 for careconnect.api.stu3# (canonical = <a href="https://mayfield-is.co.uk/STU3">https://mayfield-is.co.uk/STU3</a> (<a href="https://mayfield-is.co.uk/STU3/history.html">history</a>))</p>
 <p>IG Publisher Version: v1.0.19-SNAPSHOT</p>
 <p><a href="#suppressed">5 Suppressed Errors</a></p>
  <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
@@ -17,10 +17,10 @@
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Information messages &amp; Warnings</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>23</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>27</b></td><td><b>1</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_kevinmayfield_Development_wildfyre_careconnect-api_input_resources_capabilitystatement_edms"><b>/Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/capabilitystatement/edms</b></a></td><td><b>1</b></td><td><b>0</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kevinmayfield_Development_wildfyre_careconnect-api_input_resources_capabilitystatement_edms"><b>/Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/capabilitystatement/edms</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_Users_kevinmayfield_Development_wildfyre_careconnect-api_input_resources_capabilitystatement_messaging"><b>/Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/capabilitystatement/messaging</b></a></td><td><b>0</b></td><td><b>0</b></td>
@@ -29,7 +29,7 @@
      <td><a href="#_Users_kevinmayfield_Development_wildfyre_careconnect-api_input_resources_capabilitystatement_pas"><b>/Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/capabilitystatement/pas</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_kevinmayfield_Development_wildfyre_careconnect-api_input_resources_careconnect-api-ig"><b>/Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/careconnect-api-ig</b></a></td><td><b>7</b></td><td><b>0</b></td>
+     <td><a href="#_Users_kevinmayfield_Development_wildfyre_careconnect-api_input_resources_careconnect-api-ig"><b>/Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/careconnect-api-ig</b></a></td><td><b>4</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_Users_kevinmayfield_Development_wildfyre_careconnect-api_input_resources_searchparameter_careconnect-patient-gender"><b>/Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/searchparameter/careconnect-patient-gender</b></a></td><td><b>2</b></td><td><b>0</b></td>
@@ -39,74 +39,89 @@
 <a name="internal"> </a>
 <h2><a href="">n/a</a></h2>
  <table class="grid">
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-edms.html#478338ce-b5d4-43ac-9b16-a490635a9518">CapabilityStatement-edms.html#/html/body/div/div/div/p/a at Line 152, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.id</b></td><td><b>warning</b></td><td><b>The Implementation Guide Resource id should be careconnect.api.stu3</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-edms.json.html#2e57e2f1-8a62-40f4-a1b1-8256e1502592">CapabilityStatement-edms.json.html#/html/body/div/div/div/p/a at Line 408, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CapabilityStatement-edms.html#085b9c5d-a5ce-4f88-a8b1-0ab5bd0a6145">CapabilityStatement-edms.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-edms.ttl.html#f9f16bde-ed9c-418a-a8e5-b93508d41777">CapabilityStatement-edms.ttl.html#/html/body/div/div/div/p/a at Line 362, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CapabilityStatement-edms.json.html#61134f00-ff32-4cb3-961d-6d0fe236a62d">CapabilityStatement-edms.json.html#/html/body/div/div/div/p/a at Line 418, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-edms.xml.html#2f4e6078-d3b6-4d31-8033-1cfd61393d56">CapabilityStatement-edms.xml.html#/html/body/div/div/div/p/a at Line 387, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CapabilityStatement-edms.ttl.html#945eb411-b6fe-4b03-b678-122d3b28aec2">CapabilityStatement-edms.ttl.html#/html/body/div/div/div/p/a at Line 372, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-messaging.html#f472fe4d-a67f-46c7-9e5b-012a63bd3145">CapabilityStatement-messaging.html#/html/body/div/div/div/p/a at Line 152, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CapabilityStatement-edms.xml.html#11752def-6347-442b-a143-e5e7862e71b3">CapabilityStatement-edms.xml.html#/html/body/div/div/div/p/a at Line 397, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-messaging.json.html#1ef65d70-87da-45a2-9f1e-153a7120c8c9">CapabilityStatement-messaging.json.html#/html/body/div/div/div/p/a at Line 195, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CapabilityStatement-messaging.html#f938418d-13f2-407e-b827-c948d31a59c9">CapabilityStatement-messaging.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-messaging.ttl.html#ee288f59-97c7-4803-a960-1dbb02374835">CapabilityStatement-messaging.ttl.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CapabilityStatement-messaging.json.html#0786b9d6-0aef-4a98-83b3-0f00783ee04c">CapabilityStatement-messaging.json.html#/html/body/div/div/div/p/a at Line 205, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-messaging.xml.html#53e5578c-144a-4d83-b473-2d2a9863a721">CapabilityStatement-messaging.xml.html#/html/body/div/div/div/p/a at Line 181, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CapabilityStatement-messaging.ttl.html#56673989-5224-48df-b788-9e1506d33030">CapabilityStatement-messaging.ttl.html#/html/body/div/div/div/p/a at Line 211, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-pas.html#3e3abe0f-3d94-4416-9984-d0cc394849ef">CapabilityStatement-pas.html#/html/body/div/div/div/p/a at Line 152, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CapabilityStatement-messaging.xml.html#c3d4348d-9596-4728-b2a9-4c84e10a8389">CapabilityStatement-messaging.xml.html#/html/body/div/div/div/p/a at Line 191, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-pas.json.html#495e44b3-48a1-4bf3-a40c-c0ab67399e8a">CapabilityStatement-pas.json.html#/html/body/div/div/div/p/a at Line 499, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CapabilityStatement-pas.html#87aa2cc1-8490-4a02-b6a1-5ea060f2469c">CapabilityStatement-pas.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-pas.ttl.html#c63be75a-26af-476b-88fd-3ed60b67b5fb">CapabilityStatement-pas.ttl.html#/html/body/div/div/div/p/a at Line 448, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CapabilityStatement-pas.json.html#af40739d-f0c8-4f70-a708-2847b102fe69">CapabilityStatement-pas.json.html#/html/body/div/div/div/p/a at Line 509, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-pas.xml.html#3946e1da-b779-4192-98d2-9591a873ac32">CapabilityStatement-pas.xml.html#/html/body/div/div/div/p/a at Line 472, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CapabilityStatement-pas.ttl.html#ab3fd0ec-e041-4568-80fe-6cf483152749">CapabilityStatement-pas.ttl.html#/html/body/div/div/div/p/a at Line 458, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="SearchParameter-careconnect-patient-gender.html#d103e43f-79c7-4286-82d0-0545bca5d167">SearchParameter-careconnect-patient-gender.html#/html/body/div/div/div/p/a at Line 151, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CapabilityStatement-pas.xml.html#4ca8ef7e-34ba-48db-bd59-6efbd3f60b28">CapabilityStatement-pas.xml.html#/html/body/div/div/div/p/a at Line 482, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="SearchParameter-careconnect-patient-gender.json.html#b7b36681-1c1b-4c87-ac1a-55c9b47dda58">SearchParameter-careconnect-patient-gender.json.html#/html/body/div/div/div/p/a at Line 180, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="SearchParameter-careconnect-patient-gender.html#f350afa7-bb66-4d90-a3c9-14cafea8cddb">SearchParameter-careconnect-patient-gender.html#/html/body/div/div/div/p/a at Line 161, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="SearchParameter-careconnect-patient-gender.ttl.html#68ac6e46-4840-45af-934f-2c0adc643984">SearchParameter-careconnect-patient-gender.ttl.html#/html/body/div/div/div/p/a at Line 189, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="SearchParameter-careconnect-patient-gender.json.html#81ad9a07-1fc9-48b7-8b02-8c8544aada54">SearchParameter-careconnect-patient-gender.json.html#/html/body/div/div/div/p/a at Line 190, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="SearchParameter-careconnect-patient-gender.xml.html#498049e3-5157-4d22-8613-a79651e025ea">SearchParameter-careconnect-patient-gender.xml.html#/html/body/div/div/div/p/a at Line 171, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="SearchParameter-careconnect-patient-gender.ttl.html#af0b6496-c369-419b-aed0-773d7f1b6940">SearchParameter-careconnect-patient-gender.ttl.html#/html/body/div/div/div/p/a at Line 199, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#2a669a98-b164-4e80-9bf3-98d5906e3344">artifacts.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="SearchParameter-careconnect-patient-gender.xml.html#68dd74da-b6b3-4a50-9e4c-317862e1c8b9">SearchParameter-careconnect-patient-gender.xml.html#/html/body/div/div/div/p/a at Line 181, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#4ea1595e-8f9c-4a90-8622-6464ce929a91">index.html#/html/body/div/div/div/p/a at Line 135, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#94504a06-d720-4fcc-b391-dc4e3ab12639">artifacts.html#/html/body/div/div/div/p/a at Line 193, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="searchparameters.html#a7002733-a9b5-4adc-b13c-cc94bb4aeecd">searchparameters.html#/html/body/div/div/div/p/a at Line 138, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="encounter.html#3e875b4b-861a-414e-9ed7-4126e3ce47a6">encounter.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="swagger-edms.html#f59d7346-4658-4e2f-ae6c-785898b57624">swagger-edms.html#/html/body/div/div/div/p/a at Line 151, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="index.html#def3f5e0-3827-46cc-8a8a-f1d719c07645">index.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="swagger-messaging.html#84de5f42-3c2f-487d-8bf9-76752090e3ac">swagger-messaging.html#/html/body/div/div/div/p/a at Line 151, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="observation.html#1dcd89a5-3c68-4291-b5fb-76d27d093473">observation.html#/html/body/div/div/div/p/a at Line 193, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="swagger-pas.html#c52baad8-ecfc-4fe9-92af-2a5b97600b65">swagger-pas.html#/html/body/div/div/div/p/a at Line 151, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="organisation.html#1dfbee5c-debe-463a-b6db-873ac6d8100d">organisation.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="toc.html#4fbbcd5a-519f-4110-89da-0ae3a6eace13">toc.html#/html/body/div/div/div/p/a at Line 125, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="patient.html#24645075-f355-4f13-8635-119821abbac5">patient.html#/html/body/div/div/div/p/a at Line 228, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="searchparameters.html#20291638-bb01-4f7f-b623-d5ac4b7b6b9e">searchparameters.html#/html/body/div/div/div/p/a at Line 148, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="swagger-edms.html#d34a1874-d10e-476a-a3f8-9efd867f2c8e">swagger-edms.html#/html/body/div/div/div/p/a at Line 161, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="swagger-messaging.html#14b6a205-c8d4-4180-9e81-a2a2a487a467">swagger-messaging.html#/html/body/div/div/div/p/a at Line 161, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="swagger-pas.html#a8345fdc-8269-4641-9a0c-6bd9d9a83f9b">swagger-pas.html#/html/body/div/div/div/p/a at Line 161, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#c6e45143-11ae-4da6-9016-dd57f9c02d2b">toc.html#/html/body/div/div/div/p/a at Line 135, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
 </table>
 <hr/>
@@ -114,10 +129,7 @@
 <h2><a href="CapabilityStatement-edms.html">/Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/CapabilityStatement/edms.xml</a></h2>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>CapabilityStatement/edms: CapabilityStatement.rest[0].resource[0].profile</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1'</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -138,7 +150,7 @@
 </table>
 <hr/>
 <a name="_Users_kevinmayfield_Development_wildfyre_careconnect-api_input_resources_careconnect-api-ig"> </a>
-<h2><a href="ImplementationGuide-mayfield-is.fhir.api.html">/Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/careconnect-api-ig.xml</a></h2>
+<h2><a href="ImplementationGuide-careconnect-api-stu3.html">/Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/careconnect-api-ig.xml</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
@@ -154,15 +166,6 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>/f:ImplementationGuide</b></td><td><b>error</b></td><td><b>Undefined element 'definition'</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>https://mayfield-is.co.uk/STU3/ImplementationGuide/fhir-api</b></td><td><b>error</b></td><td><b>Conformance resource /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/careconnect-api-ig.xml - the canonical URL (https://mayfield-is.co.uk/STU3/ImplementationGuide/mayfield-is.fhir.api) does not match the URL (https://mayfield-is.co.uk/STU3/ImplementationGuide/fhir-api)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide.url</b></td><td><b>error</b></td><td><b>Resource id/url mismatch: mayfield-is.fhir.api/https://mayfield-is.co.uk/STU3/ImplementationGuide/fhir-api</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>/Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/careconnect-api-ig</b></td><td><b>error</b></td><td><b>URL Mismatch https://mayfield-is.co.uk/STU3/ImplementationGuide/mayfield-is.fhir.api vs https://mayfield-is.co.uk/STU3/ImplementationGuide/fhir-api</b></td>
    </tr>
 </table>
 <hr/>

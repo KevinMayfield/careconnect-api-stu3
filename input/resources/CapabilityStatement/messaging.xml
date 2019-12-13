@@ -1,9 +1,9 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
     <id value="messaging"/>
     <version value="3.0.0"/>
-    <name value="HL7 UK TIE API Capability Statement"/>
+    <name value="Care Connect TIE API Capability Statement"/>
     <status value="active"/>
-    <publisher value="HL7 UK"/>
+    <publisher value="mayfield-is.co.uk"/>
     <description value="Minimal conformance requirements for a TIE Server exposing a FHIR RESTful API"/>
     <kind value="instance"/>
     <fhirVersion value="3.0.2"/>

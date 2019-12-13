@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="mayfield-is.fhir.api"/>
+  <id value="careconnect-api-stu3"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>UK FHIR API</h2><p>The official URL for this implementation guide is: </p><pre>https://mayfield-is.co.uk/STU3/ImplementationGuide/fhir-api</pre><div><p>Demonstration of FHIR Implementation Guide to support API Management</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Care Connect API</h2><p>The official URL for this implementation guide is: </p><pre>https://mayfield-is.co.uk/STU3/ImplementationGuide/careconnect-api-stu3</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support API Management</p>
 </div></div>
   </text>
-  <url value="https://mayfield-is.co.uk/STU3/ImplementationGuide/fhir-api"/>
-  <name value="UK FHIR API"/>
+  <url value="https://mayfield-is.co.uk/STU3/ImplementationGuide/careconnect-api-stu3"/>
+  <name value="Care Connect API"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2019-12-13T07:36:24+00:00"/>
-  <publisher value="mayfield-is"/>
+  <date value="2019-12-13T08:40:13+00:00"/>
+  <publisher value="mayfield-is.co.uk"/>
   <contact>
     <telecom>
       <system value="email"/>
       <value value="kevin.mayfield@mayfield-is.co.uk"/>
     </telecom>
   </contact>
-  <description value="Demonstration of FHIR Implementation Guide to support API Management"/>
+  <description value="Demonstration of Care Connect STU3 Implementation Guide to support API Management"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -36,7 +36,27 @@
     <kind value="page"/>
     <page>
       <source value="index.html"/>
-      <title value="Example API Documentation (Implementation Guide)"/>
+      <title value="Care Connect API STU3"/>
+      <kind value="resource"/>
+    </page>
+    <page>
+      <source value="encounter.html"/>
+      <title value="Encounter"/>
+      <kind value="resource"/>
+    </page>
+    <page>
+      <source value="patient.html"/>
+      <title value="Patient"/>
+      <kind value="resource"/>
+    </page>
+    <page>
+      <source value="observation.html"/>
+      <title value="Observation"/>
+      <kind value="resource"/>
+    </page>
+    <page>
+      <source value="organisation.html"/>
+      <title value="Organisation"/>
       <kind value="resource"/>
     </page>
     <page>

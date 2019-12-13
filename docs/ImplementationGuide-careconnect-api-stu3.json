@@ -1,16 +1,16 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "mayfield-is.fhir.api",
+  "id": "careconnect-api-stu3",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>UK FHIR API</h2><p>The official URL for this implementation guide is: </p><pre>https://mayfield-is.co.uk/STU3/ImplementationGuide/fhir-api</pre><div><p>Demonstration of FHIR Implementation Guide to support API Management</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Care Connect API</h2><p>The official URL for this implementation guide is: </p><pre>https://mayfield-is.co.uk/STU3/ImplementationGuide/careconnect-api-stu3</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support API Management</p>\n</div></div>"
   },
-  "url": "https://mayfield-is.co.uk/STU3/ImplementationGuide/fhir-api",
-  "name": "UK FHIR API",
+  "url": "https://mayfield-is.co.uk/STU3/ImplementationGuide/careconnect-api-stu3",
+  "name": "Care Connect API",
   "status": "draft",
   "experimental": false,
-  "date": "2019-12-13T07:36:24+00:00",
-  "publisher": "mayfield-is",
+  "date": "2019-12-13T08:40:13+00:00",
+  "publisher": "mayfield-is.co.uk",
   "contact": [
     {
       "telecom": [
@@ -21,7 +21,7 @@
       ]
     }
   ],
-  "description": "Demonstration of FHIR Implementation Guide to support API Management",
+  "description": "Demonstration of Care Connect STU3 Implementation Guide to support API Management",
   "jurisdiction": [
     {
       "coding": [
@@ -46,7 +46,27 @@
     "page": [
       {
         "source": "index.html",
-        "title": "Example API Documentation (Implementation Guide)",
+        "title": "Care Connect API STU3",
+        "kind": "resource"
+      },
+      {
+        "source": "encounter.html",
+        "title": "Encounter",
+        "kind": "resource"
+      },
+      {
+        "source": "patient.html",
+        "title": "Patient",
+        "kind": "resource"
+      },
+      {
+        "source": "observation.html",
+        "title": "Observation",
+        "kind": "resource"
+      },
+      {
+        "source": "organisation.html",
+        "title": "Organisation",
         "kind": "resource"
       },
       {

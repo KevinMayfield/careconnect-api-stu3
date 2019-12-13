@@ -1,9 +1,9 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
     <id value="edms"/>
     <version value="3.0.0"/>
-    <name value="HL7 UK EDMS API Capability Statement"/>
+    <name value="Care Connect EDMS API Capability Statement"/>
     <status value="active"/>
-    <publisher value="HL7 UK"/>
+    <publisher value="mayfield-is.co.uk"/>
     <description value="Minimal conformance requirements for a EDMS Server exposing a FHIR RESTful API"/>
     <kind value="instance"/>
     <fhirVersion value="3.0.2"/>

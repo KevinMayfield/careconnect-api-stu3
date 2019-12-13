@@ -1,6 +1,17 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">API Home</a></li>
   <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">API Documentation<b class="caret">
+    </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="encounter.html">Encounter</a></li>
+      <li><a href="patient.html">Patient</a></li>
+      <li><a href="observation.html">Observation</a></li>
+      <li><a href="organisation.html">Organisation</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">OpenAPI<b class="caret">
     </b>
     </a>
@@ -11,6 +22,5 @@
     </ul>
   </li>
   <li><a href="searchparameters.html">Search Parameters</a></li>
-  <li><a href="toc.html">Table of Contents</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
 </ul>      

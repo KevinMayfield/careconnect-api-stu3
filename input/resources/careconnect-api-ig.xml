@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
-  <id value="mayfield-is.fhir.api"/>
-  <url value="https://mayfield-is.co.uk/STU3/ImplementationGuide/fhir-api"/>
-  <name value="UK FHIR API"/>
-  <title value="UK FHIR API"/>
+  <id value="careconnect-api-stu3"/>
+  <url value="https://mayfield-is.co.uk/STU3/ImplementationGuide/careconnect-api-stu3"/>
+  <name value="Care Connect API"/>
+  <title value="Care Connect API"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <publisher value="mayfield-is"/>
+  <publisher value="mayfield-is.co.uk"/>
   <contact>
     <telecom>
       <!-- Or whatever URL and/or email address(es) are appropriate -->
@@ -15,7 +15,7 @@
       <value value="kevin.mayfield@mayfield-is.co.uk"/>
     </telecom>
   </contact>
-  <description value="Demonstration of FHIR Implementation Guide to support API Management"/>
+  <description value="Demonstration of Care Connect STU3 Implementation Guide to support API Management"/>
   <jurisdiction>
     <!-- This will drive SNOMED release used -->
     <coding>
@@ -28,7 +28,7 @@
       -->
     </coding>
   </jurisdiction>
-  <packageId value="mayfield-is.fhir.api"/>
+  <packageId value="careconnect.api.stu3"/>
   <!-- This is whatever FHIR version the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
   <fhirVersion value="3.0.2"/>
   <dependsOn>
@@ -50,14 +50,14 @@
       <reference>
         <reference value="CapabilityStatement/edms"/>
       </reference>
-      <name value="EDMS FHIR RESTful Base Conformance"/>
+      <name value="EDMS RESTful Base Conformance"/>
       <description value="Electronic Document Management System FHIR RESTful Base Conformance"/>
     </resource>
     <resource>
       <reference>
         <reference value="CapabilityStatement/messaging"/>
       </reference>
-      <name value="Messaging FHIR RESTful Base Conformance"/>
+      <name value="Messaging RESTful Base Conformance"/>
       <description value="Messaging System FHIR RESTful Base Conformance. In acute trusts this API will normally be found on the Trust Integration Engine"/>
     </resource>
    <resource>
@@ -74,7 +74,27 @@
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="Example API Documentation (Implementation Guide)"/>
+        <title value="Care Connect API STU3"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="encounter.html"/>
+        <title value="Encounter"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="patient.html"/>
+        <title value="Patient"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="observation.html"/>
+        <title value="Observation"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="organisation.html"/>
+        <title value="Organisation"/>
         <generation value="markdown"/>
       </page>
       <page>

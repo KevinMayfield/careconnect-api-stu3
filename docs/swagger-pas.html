@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>MAYFIELD-IS.FHIR.API\OpenAPI PAS - FHIR v3.0.2</title>
+    <title>CARECONNECT-API-STU3\OpenAPI PAS - FHIR v3.0.2</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -36,14 +36,14 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"2"}
-    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
         
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">UK FHIR API</span><br/> - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">Care Connect API</span><br/> - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -66,6 +66,17 @@
               <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">API Home</a></li>
   <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">API Documentation<b class="caret">
+    </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="encounter.html">Encounter</a></li>
+      <li><a href="patient.html">Patient</a></li>
+      <li><a href="observation.html">Observation</a></li>
+      <li><a href="organisation.html">Organisation</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">OpenAPI<b class="caret">
     </b>
     </a>
@@ -76,7 +87,6 @@
     </ul>
   </li>
   <li><a href="searchparameters.html">Search Parameters</a></li>
-  <li><a href="toc.html">Table of Contents</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
 </ul>      
 
@@ -107,7 +117,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">UK FHIR API - Local Development build (vnull). See the <a href="https://mayfield-is.co.uk/STU3/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Care Connect API - Local Development build (vnull). See the <a href="https://mayfield-is.co.uk/STU3/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>OpenAPI PAS</h2>
   
   <div xmlns="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -124,7 +134,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     window.onload = function() {
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
-        url: "https://kevinmayfield.github.io/fhir-api/pas-noschema.openapi.json",
+        url: "https://kevinmayfield.github.io/careconnect-api-stu3/pas-noschema.openapi.json",
         dom_id: '#swagger-ui',
         deepLinking: true,
         presets: [
@@ -147,8 +157,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="c52baad8-ecfc-4fe9-92af-2a5b97600b65">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk"></a>mayfield-is.  Package mayfield-is.fhir.api# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Fri, Dec 13, 2019 07:36+0000">2019-12-13</span>
+        <p><a name="a8345fdc-8269-4641-9a0c-6bd9d9a83f9b">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk"></a>mayfield-is.co.uk.  Package careconnect.api.stu3# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Fri, Dec 13, 2019 08:40+0000">2019-12-13</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

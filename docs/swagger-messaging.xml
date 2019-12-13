@@ -12,7 +12,7 @@
     window.onload = function() {
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
-        url: "https://kevinmayfield.github.io/fhir-api/messaging-noschema.openapi.json",
+        url: "https://kevinmayfield.github.io/careconnect-api-stu3/messaging-noschema.openapi.json",
         dom_id: '#swagger-ui',
         deepLinking: true,
         presets: [

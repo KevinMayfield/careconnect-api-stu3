@@ -1,5 +1,5 @@
 {
-  "package": "mayfield-is.fhir.api",
+  "package": "careconnect.api.stu3",
   "fhirVersion": "3.0.2",
   "jurisdiction": "826",
   "extensions": [],

@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://mayfield-is.co.uk/STU3/ImplementationGuide/mayfield-is.fhir.api> a fhir:ImplementationGuide;
+<https://mayfield-is.co.uk/STU3/ImplementationGuide/careconnect-api-stu3> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "mayfield-is.fhir.api"];
+  fhir:Resource.id [ fhir:value "careconnect-api-stu3"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>UK FHIR API</h2><p>The official URL for this implementation guide is: </p><pre>https://mayfield-is.co.uk/STU3/ImplementationGuide/fhir-api</pre><div><p>Demonstration of FHIR Implementation Guide to support API Management</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Care Connect API</h2><p>The official URL for this implementation guide is: </p><pre>https://mayfield-is.co.uk/STU3/ImplementationGuide/careconnect-api-stu3</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support API Management</p>\n</div></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "https://mayfield-is.co.uk/STU3/ImplementationGuide/fhir-api"];
-  fhir:ImplementationGuide.name [ fhir:value "UK FHIR API"];
+  fhir:ImplementationGuide.url [ fhir:value "https://mayfield-is.co.uk/STU3/ImplementationGuide/careconnect-api-stu3"];
+  fhir:ImplementationGuide.name [ fhir:value "Care Connect API"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2019-12-13T07:36:24+00:00"^^xsd:dateTime];
-  fhir:ImplementationGuide.publisher [ fhir:value "mayfield-is"];
+  fhir:ImplementationGuide.date [ fhir:value "2019-12-13T08:40:13+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.publisher [ fhir:value "mayfield-is.co.uk"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.telecom [
@@ -26,7 +26,7 @@
        fhir:ContactPoint.value [ fhir:value "kevin.mayfield@mayfield-is.co.uk" ]
      ]
   ];
-  fhir:ImplementationGuide.description [ fhir:value "Demonstration of FHIR Implementation Guide to support API Management"];
+  fhir:ImplementationGuide.description [ fhir:value "Demonstration of Care Connect STU3 Implementation Guide to support API Management"];
   fhir:ImplementationGuide.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -48,25 +48,45 @@
      fhir:ImplementationGuide.page.page [
        fhir:index 0;
        fhir:ImplementationGuide.page.source [ fhir:value "index.html" ];
-       fhir:ImplementationGuide.page.title [ fhir:value "Example API Documentation (Implementation Guide)" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "Care Connect API STU3" ];
        fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
      ], [
        fhir:index 1;
+       fhir:ImplementationGuide.page.source [ fhir:value "encounter.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "Encounter" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.page.source [ fhir:value "patient.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "Patient" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.page.source [ fhir:value "observation.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "Observation" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.page.source [ fhir:value "organisation.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "Organisation" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
+     ], [
+       fhir:index 5;
        fhir:ImplementationGuide.page.source [ fhir:value "swagger-pas.html" ];
        fhir:ImplementationGuide.page.title [ fhir:value "OpenAPI PAS" ];
        fhir:ImplementationGuide.page.kind [ fhir:value "page" ]
      ], [
-       fhir:index 2;
+       fhir:index 6;
        fhir:ImplementationGuide.page.source [ fhir:value "swagger-edms.html" ];
        fhir:ImplementationGuide.page.title [ fhir:value "OpenAPI EDMS" ];
        fhir:ImplementationGuide.page.kind [ fhir:value "page" ]
      ], [
-       fhir:index 3;
+       fhir:index 7;
        fhir:ImplementationGuide.page.source [ fhir:value "swagger-messaging.html" ];
        fhir:ImplementationGuide.page.title [ fhir:value "OpenAPI Messging" ];
        fhir:ImplementationGuide.page.kind [ fhir:value "page" ]
      ], [
-       fhir:index 4;
+       fhir:index 8;
        fhir:ImplementationGuide.page.source [ fhir:value "searchparameters.html" ];
        fhir:ImplementationGuide.page.title [ fhir:value "Search Paramters" ];
        fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
@@ -75,7 +95,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://mayfield-is.co.uk/STU3/ImplementationGuide/mayfield-is.fhir.api.ttl> a owl:Ontology;
+<https://mayfield-is.co.uk/STU3/ImplementationGuide/careconnect-api-stu3.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

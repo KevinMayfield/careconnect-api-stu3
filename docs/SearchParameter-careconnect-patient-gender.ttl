@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mayfield-is.co.uk/STU3/SearchParameter/careconnect-patient-gender> a fhir:SearchParameter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "careconnect-patient-gender"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: careconnect-patient-gender</p><p><b>url</b>: <a href=\"https://fhir.hl7.orguk/STU3/SearchParameter/careconnect-patient-gender\">https://fhir.hl7.orguk/STU3/SearchParameter/careconnect-patient-gender</a></p><p><b>version</b>: 3.0.0</p><p><b>name</b>: CareConnectPatientGender</p><p><b>status</b>: draft</p><p><b>experimental</b>: false</p><p><b>date</b>: 23 Sep 2019, 10:48:45</p><p><b>publisher</b>: mayfield-is.co.uk</p><p><b>contact</b>: </p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style=\"background: LightGoldenRodYellow\">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><p><b>code</b>: gender</p><p><b>base</b>: Patient</p><p><b>type</b>: token</p><p><b>derivedFrom</b>: <a href=\"http://hl7.org/fhir/SearchParameter/individual-gender\">http://hl7.org/fhir/SearchParameter/individual-gender</a></p><p><b>description</b>: Gender of the patient</p><p><b>expression</b>: Patient.gender</p><p><b>xpath</b>: f:Patient/f:gender</p><p><b>xpathUsage</b>: normal</p></div>"
+  ];
+  fhir:SearchParameter.url [ fhir:value "https://fhir.hl7.orguk/STU3/SearchParameter/careconnect-patient-gender"];
+  fhir:SearchParameter.version [ fhir:value "3.0.0"];
+  fhir:SearchParameter.name [ fhir:value "CareConnectPatientGender"];
+  fhir:SearchParameter.status [ fhir:value "draft"];
+  fhir:SearchParameter.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:SearchParameter.date [ fhir:value "2019-09-23T10:48:45+01:00"^^xsd:dateTime];
+  fhir:SearchParameter.publisher [ fhir:value "mayfield-is.co.uk"];
+  fhir:SearchParameter.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "kevin.mayfield@mayfield-is.co.uk" ]
+     ]
+  ];
+  fhir:SearchParameter.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "826" ]
+     ]
+  ];
+  fhir:SearchParameter.code [ fhir:value "gender"];
+  fhir:SearchParameter.base [
+     fhir:value "Patient";
+     fhir:index 0
+  ];
+  fhir:SearchParameter.type [ fhir:value "token"];
+  fhir:SearchParameter.derivedFrom [ fhir:value "http://hl7.org/fhir/SearchParameter/individual-gender"];
+  fhir:SearchParameter.description [ fhir:value "Gender of the patient"];
+  fhir:SearchParameter.expression [ fhir:value "Patient.gender"];
+  fhir:SearchParameter.xpath [ fhir:value "f:Patient/f:gender"];
+  fhir:SearchParameter.xpathUsage [ fhir:value "normal"] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://mayfield-is.co.uk/STU3/SearchParameter/careconnect-patient-gender.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

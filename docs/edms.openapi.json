@@ -1,14 +1,14 @@
 ﻿{
   "openapi": "3.0.2",
   "info": {
-    "title": "HL7 UK EDMS API Capability Statement",
+    "title": "Care Connect EDMS API Capability Statement",
     "description": "Minimal conformance requirements for a EDMS Server exposing a FHIR RESTful API",
     "license": {
       "url": "http://spdx.org/licenses/CC0-1.0.html"
     },
     "version": "3.0.0",
     "contact": {
-      "name": "mayfield-is"
+      "name": "mayfield-is.co.uk"
     }
   },
   "externalDocs": {

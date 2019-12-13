@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>MAYFIELD-IS.FHIR.API\EDMS FHIR RESTful Base Conformance - FHIR v3.0.2</title>
+    <title>CARECONNECT-API-STU3\EDMS RESTful Base Conformance - FHIR v3.0.2</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -36,14 +36,14 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"6.2"}
-    h3,h4,h5,h6{--heading-prefix:"6.2"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.2"}
+    h3,h4,h5,h6{--heading-prefix:"10.2"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
         
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">UK FHIR API</span><br/> - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">Care Connect API</span><br/> - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -66,6 +66,17 @@
               <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">API Home</a></li>
   <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">API Documentation<b class="caret">
+    </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="encounter.html">Encounter</a></li>
+      <li><a href="patient.html">Patient</a></li>
+      <li><a href="observation.html">Observation</a></li>
+      <li><a href="organisation.html">Organisation</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">OpenAPI<b class="caret">
     </b>
     </a>
@@ -76,7 +87,6 @@
     </ul>
   </li>
   <li><a href="searchparameters.html">Search Parameters</a></li>
-  <li><a href="toc.html">Table of Contents</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
 </ul>      
 
@@ -90,7 +100,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>EDMS FHIR RESTful Base Conformance</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>EDMS RESTful Base Conformance</b></li>
         </ul>  
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
@@ -103,9 +113,9 @@
 
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">UK FHIR API - Local Development build (vnull). See the <a href="https://mayfield-is.co.uk/STU3/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Care Connect API - Local Development build (vnull). See the <a href="https://mayfield-is.co.uk/STU3/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <a name="root"> </a>
-  <h2 id="root">EDMS FHIR RESTful Base Conformance</h2>
+  <h2 id="root">EDMS RESTful Base Conformance</h2>
   <p>
     Format(s):
   </p>
@@ -133,8 +143,8 @@
   <p>
     <b>Narrative view</b>
   </p>
-  <div xmlns="http://www.w3.org/1999/xhtml"><h2>HL7 UK EDMS API Capability Statement</h2><div><p>Minimal conformance requirements for a EDMS Server exposing a FHIR RESTful API</p>
-</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>DocumentReference</td><td><a href="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1">https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Patient</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Practitioner</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><h2>Care Connect EDMS API Capability Statement</h2><div><p>Minimal conformance requirements for a EDMS Server exposing a FHIR RESTful API</p>
+</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>DocumentReference</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Patient</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Practitioner</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>
 
   
   
@@ -148,8 +158,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="478338ce-b5d4-43ac-9b16-a490635a9518">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk"></a>mayfield-is.  Package mayfield-is.fhir.api# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Fri, Dec 13, 2019 07:36+0000">2019-12-13</span>
+        <p><a name="085b9c5d-a5ce-4f88-a8b1-0ab5bd0a6145">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk"></a>mayfield-is.co.uk.  Package careconnect.api.stu3# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Fri, Dec 13, 2019 08:40+0000">2019-12-13</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

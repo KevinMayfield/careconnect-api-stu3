@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>MAYFIELD-IS.FHIR.API\Example API Documentation (Implementation Guide) - FHIR v3.0.2</title>
+    <title>CARECONNECT-API-STU3\Care Connect API STU3 - FHIR v3.0.2</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,7 +43,7 @@
         
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">UK FHIR API</span><br/> - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">Care Connect API</span><br/> - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -66,6 +66,17 @@
               <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">API Home</a></li>
   <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">API Documentation<b class="caret">
+    </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="encounter.html">Encounter</a></li>
+      <li><a href="patient.html">Patient</a></li>
+      <li><a href="observation.html">Observation</a></li>
+      <li><a href="organisation.html">Organisation</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">OpenAPI<b class="caret">
     </b>
     </a>
@@ -76,7 +87,6 @@
     </ul>
   </li>
   <li><a href="searchparameters.html">Search Parameters</a></li>
-  <li><a href="toc.html">Table of Contents</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
 </ul>      
 
@@ -90,7 +100,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Example API Documentation (Implementation Guide)</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Care Connect API STU3</b></li>
         </ul>  
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
@@ -107,18 +117,35 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">UK FHIR API - Local Development build (vnull). See the <a href="https://mayfield-is.co.uk/STU3/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
-  <h2>Example API Documentation (Implementation Guide)</h2>
+    <!-- ReleaseHeader --><p id="publish-box">Care Connect API - Local Development build (vnull). See the <a href="https://mayfield-is.co.uk/STU3/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Care Connect API STU3</h2>
   
   
   
 <div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#feedback" id="markdown-toc-feedback">Feedback</a></li>
+</ul>
 
 </div>
+<h3 id="introduction">Introduction</h3>
 
-<p>The purpose of this IG is to demonstrate documenting an endpoint/server using FHIR ImplementationGuide.</p>
+<p>The purpose of this Implementation Guide is to <em>demonstrate</em> the API Managment features in FHIR. 
+The guide builds on the <a href="https://interopen.github.io/careconnect-base-stu3/">INTEROPen Care Connect STU3 Implementation Guide</a></p>
 
-<p>It is not representing a conformance statandard.</p>
+<p>Note: From a HL7 FHIR perspective is dependsOn this IG.</p>
+
+<p>It is also based on the <a href="https://nhsconnect.github.io/CareConnectAPI/">INTEROPen Care Connect API</a>. This concentrates on presenting information for developers.</p>
+
+<h3 id="feedback">Feedback</h3>
+
+<p>Feedback is welcome, suggested resources:</p>
+
+<ul>
+  <li><a href="https://chat.fhir.org/#narrow/stream/179189-uk">HL7 FHIR Chat Forum - UK Stream</a></li>
+  <li><a href="https://www.openhealthhub.org/">OpenHeathHub</a></li>
+</ul>
 
 
 </div>
@@ -131,8 +158,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="4ea1595e-8f9c-4a90-8622-6464ce929a91">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk"></a>mayfield-is.  Package mayfield-is.fhir.api# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Fri, Dec 13, 2019 07:36+0000">2019-12-13</span>
+        <p><a name="def3f5e0-3827-46cc-8a8a-f1d719c07645">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk"></a>mayfield-is.co.uk.  Package careconnect.api.stu3# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Fri, Dec 13, 2019 08:40+0000">2019-12-13</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
