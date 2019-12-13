@@ -12,7 +12,7 @@
     }
   },
   "externalDocs": {
-    "url": "https://mayfield-is.co.uk/STU3/CapabilityStatement/messaging",
+    "url": "https://kevinmayfield.github.io/careconnect-api-stu3/CapabilityStatement/messaging",
     "description": "FHIR CapabilityStatement"
   },
   "paths": {

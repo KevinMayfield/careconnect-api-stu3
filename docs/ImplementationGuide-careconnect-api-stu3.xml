@@ -3,14 +3,14 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="careconnect-api-stu3"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Care Connect API</h2><p>The official URL for this implementation guide is: </p><pre>https://mayfield-is.co.uk/STU3/ImplementationGuide/careconnect-api-stu3</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support API Management</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Care Connect API</h2><p>The official URL for this implementation guide is: </p><pre>https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-api-stu3</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support API Management</p>
 </div></div>
   </text>
-  <url value="https://mayfield-is.co.uk/STU3/ImplementationGuide/careconnect-api-stu3"/>
+  <url value="https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-api-stu3"/>
   <name value="Care Connect API"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2019-12-13T13:34:33+00:00"/>
+  <date value="2019-12-13T14:07:28+00:00"/>
   <publisher value="mayfield-is.co.uk"/>
   <contact>
     <telecom>

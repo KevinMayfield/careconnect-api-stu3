@@ -12,7 +12,7 @@
     }
   },
   "externalDocs": {
-    "url": "https://mayfield-is.co.uk/STU3/CapabilityStatement/edms",
+    "url": "https://kevinmayfield.github.io/careconnect-api-stu3/CapabilityStatement/edms",
     "description": "FHIR CapabilityStatement"
   },
   "paths": {

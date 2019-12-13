@@ -3,7 +3,7 @@
 
 err = 12, warn = 0, info = 0
 IG Publisher Version: v1.0.17-SNAPSHOT Out of date - current version is v1.0.19-SNAPSHOT
-Generated Fri Dec 13 13:34:49 GMT 2019. FHIR version 3.0.2 for careconnect.api.stu3# (canonical = https://mayfield-is.co.uk/STU3)
+Generated Fri Dec 13 14:07:46 GMT 2019. FHIR version 3.0.2 for careconnect.api.stu3# (canonical = https://kevinmayfield.github.io/careconnect-api-stu3)
 
  Build Errors : 27 / 2
  C:\Development\kevinmayfield\fhir-api\input\resources\capabilitystatement\edms : 0 / 0
@@ -18,15 +18,15 @@ WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be 
 ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-edms.html#/html/body/div/div/div/p/a at Line 162, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
 ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-edms.json.html#/html/body/div/div/div/p/a at Line 418, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
 ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-edms.ttl.html#/html/body/div/div/div/p/a at Line 372, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-edms.xml.html#/html/body/div/div/div/p/a at Line 397, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-edms.xml.html#/html/body/div/div/div/p/a at Line 398, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
 ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-messaging.html#/html/body/div/div/div/p/a at Line 162, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
 ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-messaging.json.html#/html/body/div/div/div/p/a at Line 205, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
 ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-messaging.ttl.html#/html/body/div/div/div/p/a at Line 211, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-messaging.xml.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-messaging.xml.html#/html/body/div/div/div/p/a at Line 192, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
 ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-pas.html#/html/body/div/div/div/p/a at Line 162, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
 ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-pas.json.html#/html/body/div/div/div/p/a at Line 509, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
 ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-pas.ttl.html#/html/body/div/div/div/p/a at Line 458, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-pas.xml.html#/html/body/div/div/div/p/a at Line 482, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-pas.xml.html#/html/body/div/div/div/p/a at Line 483, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
 ERROR: C:\Development\kevinmayfield\fhir-api\output\SearchParameter-careconnect-patient-gender.html#/html/body/div/div/div/p/a at Line 161, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
 ERROR: C:\Development\kevinmayfield\fhir-api\output\SearchParameter-careconnect-patient-gender.json.html#/html/body/div/div/div/p/a at Line 190, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
 ERROR: C:\Development\kevinmayfield\fhir-api\output\SearchParameter-careconnect-patient-gender.ttl.html#/html/body/div/div/div/p/a at Line 199, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
@@ -51,5 +51,5 @@ ERROR: /f:ImplementationGuide: Undefined element 'packageId'
 ERROR: /f:ImplementationGuide: Undefined element 'dependsOn'
 ERROR: /f:ImplementationGuide: Undefined element 'definition'
 == C:\Development\kevinmayfield\fhir-api\input\resources\SearchParameter\careconnect-patient-gender.xml ==
-ERROR: https://fhir.hl7.orguk/STU3/SearchParameter/careconnect-patient-gender: Conformance resource C:\Development\kevinmayfield\fhir-api\input\resources\SearchParameter\careconnect-patient-gender.xml - the canonical URL (https://mayfield-is.co.uk/STU3/SearchParameter/careconnect-patient-gender) does not match the URL (https://fhir.hl7.orguk/STU3/SearchParameter/careconnect-patient-gender)
-ERROR: C:\Development\kevinmayfield\fhir-api\input\resources\searchparameter\careconnect-patient-gender: URL Mismatch https://mayfield-is.co.uk/STU3/SearchParameter/careconnect-patient-gender vs https://fhir.hl7.orguk/STU3/SearchParameter/careconnect-patient-gender
+ERROR: https://fhir.hl7.orguk/STU3/SearchParameter/careconnect-patient-gender: Conformance resource C:\Development\kevinmayfield\fhir-api\input\resources\SearchParameter\careconnect-patient-gender.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/SearchParameter/careconnect-patient-gender) does not match the URL (https://fhir.hl7.orguk/STU3/SearchParameter/careconnect-patient-gender)
+ERROR: C:\Development\kevinmayfield\fhir-api\input\resources\searchparameter\careconnect-patient-gender: URL Mismatch https://kevinmayfield.github.io/careconnect-api-stu3/SearchParameter/careconnect-patient-gender vs https://fhir.hl7.orguk/STU3/SearchParameter/careconnect-patient-gender

@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Care Connect EDMS API Capability Statement</h2><div><p>Minimal conformance requirements for a EDMS Server exposing a FHIR RESTful API</p>
 </div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>DocumentReference</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Patient</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Practitioner</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>
   </text>
-  <url value="https://mayfield-is.co.uk/STU3/CapabilityStatement/edms"/>
+  <url value="https://kevinmayfield.github.io/careconnect-api-stu3/CapabilityStatement/edms"/>
   <version value="3.0.0"/>
   <name value="Care Connect EDMS API Capability Statement"/>
   <status value="active"/>
-  <date value="2019-12-13T13:34:33+00:00"/>
+  <date value="2019-12-13T14:07:28+00:00"/>
   <publisher value="mayfield-is.co.uk"/>
   <contact>
     <telecom>

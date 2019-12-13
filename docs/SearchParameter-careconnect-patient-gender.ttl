@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://mayfield-is.co.uk/STU3/SearchParameter/careconnect-patient-gender> a fhir:SearchParameter;
+<https://kevinmayfield.github.io/careconnect-api-stu3/SearchParameter/careconnect-patient-gender> a fhir:SearchParameter;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "careconnect-patient-gender"];
   fhir:DomainResource.text [
@@ -49,7 +49,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://mayfield-is.co.uk/STU3/SearchParameter/careconnect-patient-gender.ttl> a owl:Ontology;
+<https://kevinmayfield.github.io/careconnect-api-stu3/SearchParameter/careconnect-patient-gender.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

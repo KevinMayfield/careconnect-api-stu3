@@ -2,7 +2,7 @@
 <!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
   <id value="careconnect-api-stu3"/>
-  <url value="https://mayfield-is.co.uk/STU3/ImplementationGuide/careconnect-api-stu3"/>
+  <url value="https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-api-stu3"/>
   <name value="Care Connect API"/>
   <title value="Care Connect API"/>
   <status value="draft"/>

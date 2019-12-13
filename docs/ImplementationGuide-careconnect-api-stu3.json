@@ -3,13 +3,13 @@
   "id": "careconnect-api-stu3",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Care Connect API</h2><p>The official URL for this implementation guide is: </p><pre>https://mayfield-is.co.uk/STU3/ImplementationGuide/careconnect-api-stu3</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support API Management</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Care Connect API</h2><p>The official URL for this implementation guide is: </p><pre>https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-api-stu3</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support API Management</p>\n</div></div>"
   },
-  "url": "https://mayfield-is.co.uk/STU3/ImplementationGuide/careconnect-api-stu3",
+  "url": "https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-api-stu3",
   "name": "Care Connect API",
   "status": "draft",
   "experimental": false,
-  "date": "2019-12-13T13:34:33+00:00",
+  "date": "2019-12-13T14:07:28+00:00",
   "publisher": "mayfield-is.co.uk",
   "contact": [
     {
