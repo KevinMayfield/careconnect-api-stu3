@@ -2,8 +2,8 @@
 =========================================
 
 err = 20, warn = 0, info = 0
-IG Publisher Version: v1.0.17-SNAPSHOT
-Generated Tue Dec 10 22:33:12 GMT 2019. FHIR version 3.0.2 for mayfield-is.fhir.api# (canonical = https://mayfield-is.co.uk/STU3)
+IG Publisher Version: v1.0.19-SNAPSHOT
+Generated Fri Dec 13 07:36:45 GMT 2019. FHIR version 3.0.2 for mayfield-is.fhir.api# (canonical = https://mayfield-is.co.uk/STU3)
 
  Build Errors : 23 / 0
  /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/capabilitystatement/edms : 1 / 0

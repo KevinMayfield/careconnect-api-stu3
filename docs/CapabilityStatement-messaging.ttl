@@ -16,7 +16,7 @@
   fhir:CapabilityStatement.version [ fhir:value "3.0.0"];
   fhir:CapabilityStatement.name [ fhir:value "HL7 UK TIE API Capability Statement"];
   fhir:CapabilityStatement.status [ fhir:value "active"];
-  fhir:CapabilityStatement.date [ fhir:value "2019-12-10T22:32:48+00:00"^^xsd:dateTime];
+  fhir:CapabilityStatement.date [ fhir:value "2019-12-13T07:36:24+00:00"^^xsd:dateTime];
   fhir:CapabilityStatement.publisher [ fhir:value "mayfield-is"];
   fhir:CapabilityStatement.contact [
      fhir:index 0;
