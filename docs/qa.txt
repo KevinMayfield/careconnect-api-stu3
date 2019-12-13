@@ -3,7 +3,7 @@
 
 err = 12, warn = 0, info = 0
 IG Publisher Version: v1.0.17-SNAPSHOT Out of date - current version is v1.0.19-SNAPSHOT
-Generated Fri Dec 13 14:07:46 GMT 2019. FHIR version 3.0.2 for careconnect.api.stu3# (canonical = https://kevinmayfield.github.io/careconnect-api-stu3)
+Generated Fri Dec 13 14:14:08 GMT 2019. FHIR version 3.0.2 for careconnect.api.stu3# (canonical = https://kevinmayfield.github.io/careconnect-api-stu3)
 
  Build Errors : 27 / 2
  C:\Development\kevinmayfield\fhir-api\input\resources\capabilitystatement\edms : 0 / 0

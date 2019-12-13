@@ -1,19 +1,19 @@
 {
  "package-id" : "careconnect.api.stu3",
- "title" : "Your User Friendly Name for MyIG Here", 
- "canonical" : "http://hl7.org/fhir/uv/myig", 
+ "title" : "Example CareConnect API STU3",
+ "canonical" : "https://kevinmayfield.github.io/careconnect-api-stu3",
  "introduction" : "The introduction that should appear in the FHIR IG registry",
  "list" : [{
   "version" : "current",
   "desc" : "Continuous Integration Build (latest in version control)",
-  "path" : "http://hl7.org/fhir/ig/HL7/myig",
+  "path" : "https://kevinmayfield.github.io/careconnect-api-stu3",
   "status" : "ci-build",
   "current" : true
  },{
-  "version" : "0.1.0",  
+  "version" : "3.0.0",
   "date" : "2099-01-01", 
   "desc" : "Initial STU ballot (Mmm yyyy Ballot)",   
-  "path" : "http://hl7.org/fhir/yyyyMmm/myig.html",   
+  "path" : "https://kevinmayfield.github.io/careconnect-api-stu3",
   "status" : "draft",
   "sequence" : "STU3"
  }]
