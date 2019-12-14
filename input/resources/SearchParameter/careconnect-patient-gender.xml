@@ -1,6 +1,6 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
     <id value="careconnect-patient-gender"/>
-    <url value="https://fhir.hl7.orguk/STU3/SearchParameter/careconnect-patient-gender"/>
+    <url value="https://kevinmayfield.github.io/careconnect-api-stu3/SearchParameter/careconnect-patient-gender"/>
     <version value="3.0.0"/>
     <name value="CareConnectPatientGender"/>
     <derivedFrom value="http://hl7.org/fhir/SearchParameter/individual-gender"/>
