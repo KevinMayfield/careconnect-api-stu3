@@ -2,7 +2,7 @@
   "openapi": "3.0.2",
   "info": {
     "title": "Care Connect TIE API Capability Statement",
-    "description": "Minimal conformance requirements for a TIE Server exposing a FHIR RESTful API",
+    "description": "Minimal conformance requirements for a TIE Server exposing a FHIR RESTful API. This would typically be found on Trust Integration Systems",
     "license": {
       "url": "http://spdx.org/licenses/CC0-1.0.html"
     },

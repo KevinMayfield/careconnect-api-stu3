@@ -1,8 +1,8 @@
 ﻿{
   "openapi": "3.0.2",
   "info": {
-    "title": "Care Connect PAS API Capability Statement",
-    "description": "Minimal conformance requirements for a PAS Server exposing a FHIR RESTful API",
+    "title": "Care Connect Foundation API Capability Statement",
+    "description": "Minimal conformance requirements for a Foundation API. This would typically be found on health Systems",
     "license": {
       "url": "http://spdx.org/licenses/CC0-1.0.html"
     },
@@ -12,7 +12,7 @@
     }
   },
   "externalDocs": {
-    "url": "https://kevinmayfield.github.io/careconnect-api-stu3/CapabilityStatement/pas",
+    "url": "https://kevinmayfield.github.io/careconnect-api-stu3/CapabilityStatement/foundation",
     "description": "FHIR CapabilityStatement"
   },
   "paths": {
@@ -60,12 +60,12 @@
         ]
       }
     },
-    "/Appointment": {
-      "summary": "manage the collection of resources of type Appointment",
-      "description": "Access to services to manage the collection of all resources of type Appointment",
+    "/Flag": {
+      "summary": "manage the collection of resources of type Flag",
+      "description": "Access to services to manage the collection of all resources of type Flag",
       "get": {
-        "summary": "Search all resources of type Appointment based on a set of criteria",
-        "operationId": "searchAppointment",
+        "summary": "Search all resources of type Flag based on a set of criteria",
+        "operationId": "searchFlag",
         "responses": {
           "default": {
             "description": "Error, with details",
@@ -112,7 +112,15 @@
           {
             "name": "identifier",
             "in": "query",
-            "description": "An Identifier of the Appointment",
+            "description": "Business identifier",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "patient",
+            "in": "query",
+            "description": "The identity of a subject to list flags for",
             "schema": {
               "type": "string"
             }
@@ -120,12 +128,12 @@
         ]
       }
     },
-    "/Appointment/{rid}": {
-      "summary": "Read/Write/etc resource instance of type Appointment",
-      "description": "Access to services to manage the state of a single resource of type Appointment",
+    "/Flag/{rid}": {
+      "summary": "Read/Write/etc resource instance of type Flag",
+      "description": "Access to services to manage the state of a single resource of type Flag",
       "get": {
         "summary": "Read the current state of the resource",
-        "operationId": "readAppointment",
+        "operationId": "readFlag",
         "responses": {
           "default": {
             "description": "Error, with details",
@@ -150,7 +158,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Appointment"
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Flag"
                 }
               }
             }
@@ -175,12 +183,12 @@
         ]
       }
     },
-    "/Encounter": {
-      "summary": "manage the collection of resources of type Encounter",
-      "description": "Access to services to manage the collection of all resources of type Encounter",
+    "/Location": {
+      "summary": "manage the collection of resources of type Location",
+      "description": "Access to services to manage the collection of all resources of type Location",
       "get": {
-        "summary": "Search all resources of type Encounter based on a set of criteria",
-        "operationId": "searchEncounter",
+        "summary": "Search all resources of type Location based on a set of criteria",
+        "operationId": "searchLocation",
         "responses": {
           "default": {
             "description": "Error, with details",
@@ -225,18 +233,9 @@
             }
           },
           {
-            "name": "date",
+            "name": "address-postalcode",
             "in": "query",
-            "description": "A date within the period the Encounter lasted",
-            "schema": {
-              "type": "string",
-              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
-            }
-          },
-          {
-            "name": "episodeofcare",
-            "in": "query",
-            "description": "Episode(s) of care that this encounter should be recorded against",
+            "description": "A postal code specified in an address",
             "schema": {
               "type": "string"
             }
@@ -244,31 +243,15 @@
           {
             "name": "identifier",
             "in": "query",
-            "description": "Identifier(s) by which this encounter is known",
+            "description": "An identifier for the location",
             "schema": {
               "type": "string"
             }
           },
           {
-            "name": "patient",
+            "name": "name",
             "in": "query",
-            "description": "The patient ro group present at the encounter",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "status",
-            "in": "query",
-            "description": "planned | arrived | triaged | in-progress | onleave | finished | cancelled +",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "type",
-            "in": "query",
-            "description": "Specific type of encounter",
+            "description": "A portion of the location\u0027s name or alias",
             "schema": {
               "type": "string"
             }
@@ -276,12 +259,12 @@
         ]
       }
     },
-    "/Encounter/{rid}": {
-      "summary": "Read/Write/etc resource instance of type Encounter",
-      "description": "Access to services to manage the state of a single resource of type Encounter",
+    "/Location/{rid}": {
+      "summary": "Read/Write/etc resource instance of type Location",
+      "description": "Access to services to manage the state of a single resource of type Location",
       "get": {
         "summary": "Read the current state of the resource",
-        "operationId": "readEncounter",
+        "operationId": "readLocation",
         "responses": {
           "default": {
             "description": "Error, with details",
@@ -306,7 +289,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Encounter"
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Location"
                 }
               }
             }

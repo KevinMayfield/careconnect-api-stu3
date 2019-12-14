@@ -1,15 +1,15 @@
 {
   "resourceType": "CapabilityStatement",
-  "id": "edms",
+  "id": "foundation",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Care Connect EDMS API Capability Statement</h2><div><p>Minimal conformance requirements for a EDMS Server exposing a FHIR RESTful API</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>DocumentReference</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Patient</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Practitioner</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Care Connect Foundation API Capability Statement</h2><div><p>Minimal conformance requirements for a Foundation API. This would typically be found on health Systems</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>Flag</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Flag-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Flag-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Location</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Patient</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Practitioner</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Procedure</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>"
   },
-  "url": "https://kevinmayfield.github.io/careconnect-api-stu3/CapabilityStatement/edms",
+  "url": "https://kevinmayfield.github.io/careconnect-api-stu3/CapabilityStatement/foundation",
   "version": "3.0.0",
-  "name": "Care Connect EDMS API Capability Statement",
+  "name": "Care Connect Foundation API Capability Statement",
   "status": "active",
-  "date": "2019-12-13T14:13:52+00:00",
+  "date": "2019-12-14T09:47:18+00:00",
   "publisher": "mayfield-is.co.uk",
   "contact": [
     {
@@ -21,7 +21,7 @@
       ]
     }
   ],
-  "description": "Minimal conformance requirements for a EDMS Server exposing a FHIR RESTful API",
+  "description": "Minimal conformance requirements for a Foundation API. This would typically be found on health Systems",
   "jurisdiction": [
     {
       "coding": [
@@ -32,7 +32,7 @@
       ]
     }
   ],
-  "kind": "instance",
+  "kind": "requirements",
   "fhirVersion": "3.0.2",
   "acceptUnknown": "extensions",
   "format": [
@@ -43,9 +43,9 @@
       "mode": "server",
       "resource": [
         {
-          "type": "DocumentReference",
+          "type": "Flag",
           "profile": {
-            "reference": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1"
+            "reference": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Flag-1"
           },
           "interaction": [
             {
@@ -55,7 +55,6 @@
               "code": "search-type"
             }
           ],
-          "conditionalUpdate": true,
           "searchParam": [
             {
               "name": "_id",
@@ -65,27 +64,48 @@
             {
               "name": "identifier",
               "type": "token",
-              "documentation": "Master Version Specific Identifier"
+              "documentation": "Business identifier"
             },
             {
               "name": "patient",
               "type": "reference",
-              "documentation": "Who/what is the subject of the document"
+              "documentation": "The identity of a subject to list flags for"
+            }
+          ]
+        },
+        {
+          "type": "Location",
+          "profile": {
+            "reference": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1"
+          },
+          "interaction": [
+            {
+              "code": "read"
             },
             {
-              "name": "period",
-              "type": "date",
-              "documentation": "Time of service that is being documented"
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "type": "string",
+              "documentation": "The ID of the resource"
             },
             {
-              "name": "setting",
+              "name": "address-postalcode",
+              "type": "string",
+              "documentation": "A postal code specified in an address"
+            },
+            {
+              "name": "identifier",
               "type": "token",
-              "documentation": "Additional details about where the content was created (e.g. clinical specialty)"
+              "documentation": "An identifier for the location"
             },
             {
-              "name": "type",
-              "type": "token",
-              "documentation": "Kind of document (LOINC if possible)"
+              "name": "name",
+              "type": "string",
+              "documentation": "A portion of the location's name or alias"
             }
           ]
         },
@@ -168,6 +188,7 @@
             },
             {
               "name": "gender",
+              "definition": "https://fhir.hl7.orguk/STU3/SearchParameter/careconnect-patient-gender",
               "type": "string",
               "documentation": "Gender of the patient"
             },
@@ -264,6 +285,48 @@
               "name": "practitioner",
               "type": "reference",
               "documentation": "Practitioner that is able to provide the defined services for the organation"
+            }
+          ]
+        },
+        {
+          "type": "Procedure",
+          "profile": {
+            "reference": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1"
+          },
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "conditionalUpdate": true,
+          "searchParam": [
+            {
+              "name": "_id",
+              "type": "string",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "date",
+              "type": "date",
+              "documentation": "Date/Period the procedure was performed"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "A unique identifier for a procedure"
+            },
+            {
+              "name": "patient",
+              "type": "reference",
+              "documentation": "Search by subject - a patient"
+            },
+            {
+              "name": "subject",
+              "type": "reference",
+              "documentation": "Search by subject"
             }
           ]
         }

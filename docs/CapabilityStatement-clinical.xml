@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="clinical"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Care Connect Clinical Capability Statement</h2><div><p>Minimal conformance requirements for a Clinical API. This would typically be found on Electronic Patient Record Systems</p>
+</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>AllergyIntolerance</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-AllergyIntolerance-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-AllergyIntolerance-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Condition</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Procedure</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>
+  </text>
+  <url value="https://kevinmayfield.github.io/careconnect-api-stu3/CapabilityStatement/clinical"/>
+  <version value="3.0.0"/>
+  <name value="Care Connect Clinical Capability Statement"/>
+  <status value="active"/>
+  <date value="2019-12-14T09:47:18+00:00"/>
+  <publisher value="mayfield-is.co.uk"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="kevin.mayfield@mayfield-is.co.uk"/>
+    </telecom>
+  </contact>
+  <description value="Minimal conformance requirements for a Clinical API. This would typically be found on Electronic Patient Record Systems"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="826"/>
+    </coding>
+  </jurisdiction>
+  <kind value="requirements"/>
+  <fhirVersion value="3.0.2"/>
+  <acceptUnknown value="extensions"/>
+  <format value="application/fhir+json"/>
+  <rest>
+    <mode value="server"/>
+    <resource>
+      <type value="AllergyIntolerance"/>
+      <profile>
+        <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-AllergyIntolerance-1"/>
+      </profile>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <conditionalUpdate value="true"/>
+      <searchParam>
+        <name value="_id"/>
+        <type value="string"/>
+        <documentation value="The ID of the resource"/>
+      </searchParam>
+      <searchParam>
+        <name value="clinical-status"/>
+        <type value="token"/>
+        <documentation value="active | inactive | resolved"/>
+      </searchParam>
+      <searchParam>
+        <name value="date"/>
+        <type value="date"/>
+        <documentation value="Date record was believed accurate"/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="External ids for this item"/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Who the sensitivity is for"/>
+      </searchParam>
+      <searchParam>
+        <name value="verification-status"/>
+        <type value="token"/>
+        <documentation value="unconfirmed | confirmed | refuted | entered-in-error"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Condition"/>
+      <profile>
+        <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"/>
+      </profile>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <name value="_id"/>
+        <type value="string"/>
+        <documentation value="The ID of the resource"/>
+      </searchParam>
+      <searchParam>
+        <name value="asserted-date"/>
+        <type value="date"/>
+        <documentation value="Date record was believed accurate"/>
+      </searchParam>
+      <searchParam>
+        <name value="category"/>
+        <type value="token"/>
+        <documentation value="The category of the condition"/>
+      </searchParam>
+      <searchParam>
+        <name value="clinical-status"/>
+        <type value="token"/>
+        <documentation value="The clinical status of the condition"/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="A unique identifier of the condition record"/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Who has the condition?"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Procedure"/>
+      <profile>
+        <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1"/>
+      </profile>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <name value="_id"/>
+        <type value="string"/>
+        <documentation value="The ID of the resource"/>
+      </searchParam>
+      <searchParam>
+        <name value="date"/>
+        <type value="date"/>
+        <documentation value="Date/Period the procedure was performed"/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="A unique identifier for a procedure"/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Search by subject - a patient"/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="Search by subject"/>
+      </searchParam>
+    </resource>
+  </rest>
+</CapabilityStatement>

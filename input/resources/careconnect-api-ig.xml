@@ -41,24 +41,52 @@
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
     <resource>
       <reference>
-        <reference value="CapabilityStatement/pas"/>
+        <reference value="CapabilityStatement/appointment"/>
       </reference>
-      <name value="PAS FHIR RESTful Base Conformance"/>
-      <description value="Patient Administration System FHIR RESTful Base Conformance"/>
+      <name value="Appointments API"/>
+      <description value="Appointments API Conformance"/>
     </resource>
     <resource>
       <reference>
-        <reference value="CapabilityStatement/edms"/>
+        <reference value="CapabilityStatement/clinical"/>
       </reference>
-      <name value="EDMS RESTful Base Conformance"/>
-      <description value="Electronic Document Management System FHIR RESTful Base Conformance"/>
+      <name value="Clinical API"/>
+      <description value="Clinical API Conformance"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CapabilityStatement/diagnostics"/>
+      </reference>
+      <name value="Diagnostics API"/>
+      <description value="Diagnostics API Conformance"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CapabilityStatement/foundation"/>
+      </reference>
+      <name value="Foundation API"/>
+      <description value="Foundation API Conformance"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CapabilityStatement/medication"/>
+      </reference>
+      <name value="Medication API"/>
+      <description value="Medication API Conformance"/>
     </resource>
     <resource>
       <reference>
         <reference value="CapabilityStatement/messaging"/>
       </reference>
-      <name value="Messaging RESTful Base Conformance"/>
-      <description value="Messaging System FHIR RESTful Base Conformance. In acute trusts this API will normally be found on the Trust Integration Engine"/>
+      <name value="Messaging API"/>
+      <description value="Messaging API Conformance."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CapabilityStatement/workflow"/>
+      </reference>
+      <name value="Workflow API"/>
+      <description value="Workflow API Conformance"/>
     </resource>
    <resource>
       <reference>

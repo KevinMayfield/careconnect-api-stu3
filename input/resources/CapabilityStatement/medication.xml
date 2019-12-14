@@ -1,0 +1,251 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+    <id value="medication"/>
+    <version value="3.0.0"/>
+    <name value="Care Connect Medication Capability Statement"/>
+    <status value="active"/>
+    <publisher value="mayfield-is.co.uk"/>
+    <description value="Minimal conformance requirements for a Medication API. This would typically be found on Prescribing and Dispensing systems"/>
+    <kind value="requirements"/>
+    <fhirVersion value="3.0.2"/>
+    <acceptUnknown value="extensions"/>
+    <format value="application/fhir+json"/>
+    <rest>
+        <mode value="server"/>
+        <resource>
+            <type value="Immunization"/>
+            <profile>
+                <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Immunization-1"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <code value="search-type"/>
+            </interaction>
+            <searchParam>
+                <name value="_id"/>
+                <type value="string"/>
+                <documentation value="The ID of the resource"/>
+            </searchParam>
+            <searchParam>
+                <name value="date"/>
+                <type value="date"/>
+                <documentation value="Vaccination  (non)-Administration Date"/>
+            </searchParam>
+            <searchParam>
+                <name value="identifier"/>
+                <type value="token"/>
+                <documentation value="Business identifier"/>
+            </searchParam>
+            <searchParam>
+                <name value="notgiven"/>
+                <type value="token"/>
+                <documentation value="Administrations which were not given"/>
+            </searchParam>
+            <searchParam>
+                <name value="patient"/>
+                <type value="reference"/>
+                <documentation value="The patient for the vaccination record"/>
+            </searchParam>
+            <searchParam>
+                <name value="status"/>
+                <type value="token"/>
+                <documentation value="Immunization event status"/>
+            </searchParam>
+            <searchParam>
+                <name value="vaccination-procedure"/>
+                <type value="token"/>
+            </searchParam>
+        </resource>
+            <resource>
+            <type value="Medication"/>
+            <profile>
+                <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <code value="search-type"/>
+            </interaction>
+            <searchParam>
+                <name value="_id"/>
+                <type value="string"/>
+                <documentation value="The ID of the resource"/>
+            </searchParam>
+            <searchParam>
+                <name value="code"/>
+                <type value="token"/>
+                <documentation value="Codes that identify this medication"/>
+            </searchParam>
+        </resource> 
+        <resource>
+            <type value="MedicationAdministration"/>
+            <profile>
+                <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationAdministration-1"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <code value="search-type"/>
+            </interaction>
+            <searchParam>
+                <name value="_id"/>
+                <type value="string"/>
+                <documentation value="The ID of the resource"/>
+            </searchParam>
+            <searchParam>
+                <name value="code"/>
+                <type value="token"/>
+                <documentation value="Return administrations of this medication code"/>
+            </searchParam>
+            <searchParam>
+                <name value="identifier"/>
+                <type value="token"/>
+                <documentation value="Return administrations with this external identifier"/>
+            </searchParam>
+            <searchParam>
+                <name value="medication"/>
+                <type value="reference"/>
+                <documentation value="Return administrations of this medication resource"/>
+            </searchParam>
+            <searchParam>
+                <name value="patient"/>
+                <type value="reference"/>
+                <documentation value="The identity of a patient to list administrations  for"/>
+            </searchParam>
+            <searchParam>
+                <name value="status"/>
+                <type value="token"/>
+                <documentation value="MedicationAdministration event status (for example one of active/paused/completed/nullified)"/>
+            </searchParam>
+        </resource>
+        <resource>
+            <type value="MedicationDispense"/>
+            <profile>
+                <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationDispense-1"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <code value="search-type"/>
+            </interaction>
+            <searchParam>
+                <name value="_id"/>
+                <type value="string"/>
+                <documentation value="The ID of the resource"/>
+            </searchParam>
+            <searchParam>
+                <name value="code"/>
+                <type value="token"/>
+                <documentation value="Return dispenses of this medicine code"/>
+            </searchParam>
+            <searchParam>
+                <name value="identifier"/>
+                <type value="token"/>
+                <documentation value="Return dispenses with this external identifier"/>
+            </searchParam>
+            <searchParam>
+                <name value="medication"/>
+                <type value="reference"/>
+                <documentation value="Return dispenses of this medicine resource"/>
+            </searchParam>
+            <searchParam>
+                <name value="patient"/>
+                <type value="reference"/>
+                <documentation value="The identity of a patient to list dispenses  for"/>
+            </searchParam>
+            <searchParam>
+                <name value="status"/>
+                <type value="token"/>
+                <documentation value="Return dispenses with a specified dispense status"/>
+            </searchParam>
+        </resource>
+        <resource>
+            <type value="MedicationRequest"/>
+            <profile>
+                <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <code value="search-type"/>
+            </interaction>
+            <searchParam>
+                <name value="_id"/>
+                <type value="string"/>
+                <documentation value="The ID of the resource"/>
+            </searchParam>
+            <searchParam>
+                <name value="authoredon"/>
+                <type value="date"/>
+                <documentation value="Return prescriptions written on this date"/>
+            </searchParam>
+            <searchParam>
+                <name value="code"/>
+                <type value="token"/>
+                <documentation value="Return prescriptions of this medication code"/>
+            </searchParam>
+            <searchParam>
+                <name value="identifier"/>
+                <type value="token"/>
+                <documentation value="Return prescriptions with this external identifier"/>
+            </searchParam>
+            <searchParam>
+                <name value="medication"/>
+                <type value="reference"/>
+                <documentation value="Return prescriptions of this medication reference"/>
+            </searchParam>
+            <searchParam>
+                <name value="patient"/>
+                <type value="reference"/>
+                <documentation value="Returns prescriptions for a specific patient"/>
+            </searchParam>
+            <searchParam>
+                <name value="status"/>
+                <type value="token"/>
+                <documentation value="Status of the prescription"/>
+            </searchParam>
+        </resource>
+        <resource>
+            <type value="MedicationStatement"/>
+            <profile>
+                <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <code value="search-type"/>
+            </interaction>
+            <searchParam>
+                <name value="_id"/>
+                <type value="string"/>
+                <documentation value="The ID of the resource"/>
+            </searchParam>
+            <searchParam>
+                <name value="effective"/>
+                <type value="date"/>
+                <documentation value="Date when patient was taking (or not taking) the medication"/>
+            </searchParam>
+            <searchParam>
+                <name value="identifier"/>
+                <type value="token"/>
+                <documentation value="Return statements with this external identifier"/>
+            </searchParam>
+            <searchParam>
+                <name value="patient"/>
+                <type value="reference"/>
+                <documentation value="Returns statements for a specific patient."/>
+            </searchParam>
+            <searchParam>
+                <name value="status"/>
+                <type value="token"/>
+                <documentation value="Return statements that match the given status"/>
+            </searchParam>
+        </resource>
+    </rest>
+</CapabilityStatement>

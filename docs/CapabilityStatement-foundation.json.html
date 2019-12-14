@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>CARECONNECT-API-STU3\EDMS RESTful Base Conformance - JSON Representation - FHIR v3.0.2</title>
+    <title>CARECONNECT-API-STU3\Foundation API - JSON Representation - FHIR v3.0.2</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -36,8 +36,8 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"10.2"}
-    h3,h4,h5,h6{--heading-prefix:"10.2"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.4"}
+    h3,h4,h5,h6{--heading-prefix:"10.4"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
         
@@ -87,7 +87,7 @@
     </ul>
   </li>
   <li><a href="searchparameters.html">Search Parameters</a></li>
-  <li><a href="artifacts.html">Artifact Index</a></li>
+  <li><a href="artifacts.html">Capability Requirements</a></li>
 </ul>      
 
             </div>    <!-- /.nav-collapse -->
@@ -100,7 +100,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>EDMS RESTful Base Conformance</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Foundation API</b></li>
         </ul>  
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
@@ -112,12 +112,12 @@
 <div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">Care Connect API - Local Development build (vnull). See the <a href="https://kevinmayfield.github.io/careconnect-api-stu3/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <a name="root"> </a>
-  <h2 id="root">EDMS RESTful Base Conformance - JSON Representation</h2>
+  <h2 id="root">Foundation API - JSON Representation</h2>
   <p>
-    <a href="CapabilityStatement-edms.html">(back to description)</a>
+    <a href="CapabilityStatement-foundation.html">(back to description)</a>
   </p>
   <p>
-    <a href="CapabilityStatement-edms.json">Raw json</a>
+    <a href="CapabilityStatement-foundation.json">Raw json</a>
   </p>
   
   
@@ -129,16 +129,16 @@
   <pre class="json">
 {
   "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement">resourceType</a>" : "CapabilityStatement",
-  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.id">id</a>" : "edms",
+  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.id">id</a>" : "foundation",
   "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.text">text</a>" : {
     "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;h2&gt;Care Connect EDMS API Capability Statement&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Minimal conformance requirements for a EDMS Server exposing a FHIR RESTful API&lt;/p&gt;\n&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;Mode&lt;/td&gt;&lt;td&gt;SERVER&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Description&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Transaction&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System History&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System Search&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Resource Type&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\"GET a resource (read interaction)\"&gt;Read&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\"GET all set of resources of the type (search interaction)\"&gt;Search&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\"PUT a new resource version (update interaction)\"&gt;Update&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\"POST a new resource (create interaction)\"&gt;Create&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DocumentReference&lt;/td&gt;&lt;td&gt;&lt;a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1\"&gt;https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Organization&lt;/td&gt;&lt;td&gt;&lt;a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1\"&gt;https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Patient&lt;/td&gt;&lt;td&gt;&lt;a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1\"&gt;https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Practitioner&lt;/td&gt;&lt;td&gt;&lt;a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1\"&gt;https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PractitionerRole&lt;/td&gt;&lt;td&gt;&lt;a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1\"&gt;https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;h2&gt;Care Connect Foundation API Capability Statement&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Minimal conformance requirements for a Foundation API. This would typically be found on health Systems&lt;/p&gt;\n&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;Mode&lt;/td&gt;&lt;td&gt;SERVER&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Description&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Transaction&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System History&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System Search&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Resource Type&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\"GET a resource (read interaction)\"&gt;Read&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\"GET all set of resources of the type (search interaction)\"&gt;Search&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\"PUT a new resource version (update interaction)\"&gt;Update&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\"POST a new resource (create interaction)\"&gt;Create&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Flag&lt;/td&gt;&lt;td&gt;&lt;a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Flag-1\"&gt;https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Flag-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Location&lt;/td&gt;&lt;td&gt;&lt;a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1\"&gt;https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Organization&lt;/td&gt;&lt;td&gt;&lt;a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1\"&gt;https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Patient&lt;/td&gt;&lt;td&gt;&lt;a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1\"&gt;https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Practitioner&lt;/td&gt;&lt;td&gt;&lt;a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1\"&gt;https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PractitionerRole&lt;/td&gt;&lt;td&gt;&lt;a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1\"&gt;https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Procedure&lt;/td&gt;&lt;td&gt;&lt;a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1\"&gt;https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
-  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.url">url</a>" : "https://kevinmayfield.github.io/careconnect-api-stu3/CapabilityStatement/edms",
+  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.url">url</a>" : "https://kevinmayfield.github.io/careconnect-api-stu3/CapabilityStatement/foundation",
   "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.version">version</a>" : "3.0.0",
-  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.name">name</a>" : "Care Connect EDMS API Capability Statement",
+  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.name">name</a>" : "Care Connect Foundation API Capability Statement",
   "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.date">date</a>" : "2019-12-13T14:13:52+00:00",
+  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.date">date</a>" : "2019-12-14T09:47:18+00:00",
   "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.publisher">publisher</a>" : "mayfield-is.co.uk",
   "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.contact">contact</a>" : [
     {
@@ -150,7 +150,7 @@
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.description">description</a>" : "Minimal conformance requirements for a EDMS Server exposing a FHIR RESTful API",
+  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.description">description</a>" : "Minimal conformance requirements for a Foundation API. This would typically be found on health Systems",
   "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.jurisdiction">jurisdiction</a>" : [
     {
       "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
@@ -161,7 +161,7 @@
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.kind">kind</a>" : "instance",
+  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.kind">kind</a>" : "requirements",
   "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.fhirVersion">fhirVersion</a>" : "3.0.2",
   "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.acceptUnknown">acceptUnknown</a>" : "extensions",
   "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.format">format</a>" : [
@@ -172,9 +172,9 @@
       "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.mode">mode</a>" : "server",
       "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>" : [
         {
-          "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "DocumentReference",
+          "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "Flag",
           "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1"
+            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Flag-1"
           },
           "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
             {
@@ -184,7 +184,6 @@
               "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "search-type"
             }
           ],
-          "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.conditionalUpdate">conditionalUpdate</a>" : true,
           "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>" : [
             {
               "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "_id",
@@ -194,27 +193,48 @@
             {
               "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "identifier",
               "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Master Version Specific Identifier"
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Business identifier"
             },
             {
               "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "patient",
               "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference",
-              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Who/what is the subject of the document"
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The identity of a subject to list flags for"
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "Location",
+          "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>" : {
+            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1"
+          },
+          "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "read"
             },
             {
-              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "period",
-              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "date",
-              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Time of service that is being documented"
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "search-type"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "_id",
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "string",
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The ID of the resource"
             },
             {
-              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "setting",
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "address-postalcode",
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "string",
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "A postal code specified in an address"
+            },
+            {
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "identifier",
               "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Additional details about where the content was created (e.g. clinical specialty)"
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "An identifier for the location"
             },
             {
-              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "type",
-              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Kind of document (LOINC if possible)"
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "name",
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "string",
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "A portion of the location's name or alias"
             }
           ]
         },
@@ -297,6 +317,7 @@
             },
             {
               "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "gender",
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "https://fhir.hl7.orguk/STU3/SearchParameter/careconnect-patient-gender",
               "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "string",
               "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Gender of the patient"
             },
@@ -395,6 +416,48 @@
               "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Practitioner that is able to provide the defined services for the organation"
             }
           ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "Procedure",
+          "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>" : {
+            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1"
+          },
+          "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "read"
+            },
+            {
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "search-type"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.conditionalUpdate">conditionalUpdate</a>" : true,
+          "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "_id",
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "string",
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The ID of the resource"
+            },
+            {
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "date",
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "date",
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Date/Period the procedure was performed"
+            },
+            {
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "identifier",
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "A unique identifier for a procedure"
+            },
+            {
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "patient",
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference",
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Search by subject - a patient"
+            },
+            {
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "subject",
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference",
+              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Search by subject"
+            }
+          ]
         }
       ]
     }
@@ -414,8 +477,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="e8d6ea4e-3e8e-47ad-a636-f7b6398f4645">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk"></a>mayfield-is.co.uk.  Package careconnect.api.stu3# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Fri, Dec 13, 2019 14:13+0000">2019-12-13</span>
+        <p><a name="2b0ba6af-3278-404e-86c6-8b4f43eae04e">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk"></a>mayfield-is.co.uk.  Package careconnect.api.stu3# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Sat, Dec 14, 2019 09:47+0000">2019-12-14</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

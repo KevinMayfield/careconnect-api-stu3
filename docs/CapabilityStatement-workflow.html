@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>CARECONNECT-API-STU3\PAS FHIR RESTful Base Conformance - FHIR v3.0.2</title>
+    <title>CARECONNECT-API-STU3\Workflow API - FHIR v3.0.2</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -36,8 +36,8 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"10.1"}
-    h3,h4,h5,h6{--heading-prefix:"10.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.7"}
+    h3,h4,h5,h6{--heading-prefix:"10.7"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
         
@@ -87,7 +87,7 @@
     </ul>
   </li>
   <li><a href="searchparameters.html">Search Parameters</a></li>
-  <li><a href="artifacts.html">Artifact Index</a></li>
+  <li><a href="artifacts.html">Capability Requirements</a></li>
 </ul>      
 
             </div>    <!-- /.nav-collapse -->
@@ -100,7 +100,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>PAS FHIR RESTful Base Conformance</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Workflow API</b></li>
         </ul>  
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
@@ -115,24 +115,24 @@
 <div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">Care Connect API - Local Development build (vnull). See the <a href="https://kevinmayfield.github.io/careconnect-api-stu3/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <a name="root"> </a>
-  <h2 id="root">PAS FHIR RESTful Base Conformance</h2>
+  <h2 id="root">Workflow API</h2>
   <p>
     Format(s):
   </p>
   <ul>
 
     <li>
-      <a href="CapabilityStatement-pas.xml.html">XML</a>
+      <a href="CapabilityStatement-workflow.xml.html">XML</a>
     </li>
 
 
     <li>
-      <a href="CapabilityStatement-pas.json.html">JSON</a> 
+      <a href="CapabilityStatement-workflow.json.html">JSON</a> 
     </li>
 
 
     <li>
-      <a href="CapabilityStatement-pas.ttl.html">Turtle</a>
+      <a href="CapabilityStatement-workflow.ttl.html">Turtle</a>
     </li>
 
   </ul>
@@ -143,8 +143,8 @@
   <p>
     <b>Narrative view</b>
   </p>
-  <div xmlns="http://www.w3.org/1999/xhtml"><h2>Care Connect PAS API Capability Statement</h2><div><p>Minimal conformance requirements for a PAS Server exposing a FHIR RESTful API</p>
-</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>Appointment</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Appointment-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Appointment-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Encounter</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Patient</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Practitioner</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Procedure</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><h2>Care Connect Workflow Capability Statement</h2><div><p>Minimal conformance requirements for a Workflow API. This would typically be found on Patient Administration Systems and Electronic Patient Record Systems</p>
+</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>Encounter</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>EpisodeOfCare</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-EpisodeOfCare-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-EpisodeOfCare-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>ReferralRequest</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>
 
   
   
@@ -158,8 +158,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="c1f876a6-b52e-4816-bf1d-b8f42d623fd6">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk"></a>mayfield-is.co.uk.  Package careconnect.api.stu3# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Fri, Dec 13, 2019 14:13+0000">2019-12-13</span>
+        <p><a name="558479db-3e94-42ad-ae6a-c040fd93e734">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk"></a>mayfield-is.co.uk.  Package careconnect.api.stu3# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Sat, Dec 14, 2019 09:47+0000">2019-12-14</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

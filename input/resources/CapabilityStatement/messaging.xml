@@ -4,7 +4,7 @@
     <name value="Care Connect TIE API Capability Statement"/>
     <status value="active"/>
     <publisher value="mayfield-is.co.uk"/>
-    <description value="Minimal conformance requirements for a TIE Server exposing a FHIR RESTful API"/>
+    <description value="Minimal conformance requirements for a TIE Server exposing a FHIR RESTful API. This would typically be found on Trust Integration Systems"/>
     <kind value="instance"/>
     <fhirVersion value="3.0.2"/>
     <acceptUnknown value="extensions"/>

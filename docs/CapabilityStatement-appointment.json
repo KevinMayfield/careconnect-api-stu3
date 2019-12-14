@@ -1,0 +1,147 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "appointment",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Care Connect Appointment Capability Statement</h2><div><p>Minimal conformance requirements for a Appointment API. This would typically be found on Patient Administration Systems and Electronic Patient Record Systems</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>Appointment</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Appointment-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Appointment-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Schedule</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Schedule-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Schedule-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Slot</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Slot-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Slot-1</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>"
+  },
+  "url": "https://kevinmayfield.github.io/careconnect-api-stu3/CapabilityStatement/appointment",
+  "version": "3.0.0",
+  "name": "Care Connect Appointment Capability Statement",
+  "status": "active",
+  "date": "2019-12-14T09:47:18+00:00",
+  "publisher": "mayfield-is.co.uk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kevin.mayfield@mayfield-is.co.uk"
+        }
+      ]
+    }
+  ],
+  "description": "Minimal conformance requirements for a Appointment API. This would typically be found on Patient Administration Systems and Electronic Patient Record Systems",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "826"
+        }
+      ]
+    }
+  ],
+  "kind": "requirements",
+  "fhirVersion": "3.0.2",
+  "acceptUnknown": "extensions",
+  "format": [
+    "application/fhir+json"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "resource": [
+        {
+          "type": "Appointment",
+          "profile": {
+            "reference": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Appointment-1"
+          },
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "conditionalUpdate": true,
+          "searchParam": [
+            {
+              "name": "_id",
+              "type": "string",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "An Identifier of the Appointment"
+            }
+          ]
+        },
+        {
+          "type": "Schedule",
+          "profile": {
+            "reference": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Schedule-1"
+          },
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "type": "string",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "A Schedule Identifier"
+            }
+          ]
+        },
+        {
+          "type": "Slot",
+          "profile": {
+            "reference": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Slot-1"
+          },
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "conditionalUpdate": true,
+          "searchParam": [
+            {
+              "name": "_id",
+              "type": "string",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "A Slot Identifier"
+            },
+            {
+              "name": "schedule",
+              "type": "reference",
+              "documentation": "The Schedule Resource that we are seeking a slot within"
+            },
+            {
+              "name": "service",
+              "type": "reference"
+            },
+            {
+              "name": "start",
+              "type": "date",
+              "documentation": "Appointment date/time."
+            },
+            {
+              "name": "status",
+              "type": "string",
+              "documentation": "The free/busy status of the appointment"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

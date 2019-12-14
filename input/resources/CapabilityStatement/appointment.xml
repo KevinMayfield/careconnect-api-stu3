@@ -1,0 +1,102 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+    <id value="appointment"/>
+    <version value="3.0.0"/>
+    <name value="Care Connect Appointment Capability Statement"/>
+    <status value="active"/>
+    <publisher value="mayfield-is.co.uk"/>
+    <description value="Minimal conformance requirements for a Appointment API. This would typically be found on Patient Administration Systems and Electronic Patient Record Systems"/>
+    <kind value="requirements"/>
+    <fhirVersion value="3.0.2"/>
+    <acceptUnknown value="extensions"/>
+    <format value="application/fhir+json"/>
+    <rest>
+        <mode value="server"/>
+        <resource>
+            <type value="Appointment"/>
+            <profile>
+                <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Appointment-1"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <code value="search-type"/>
+            </interaction>
+            <conditionalUpdate value="true"/>
+            <searchParam>
+                <name value="_id"/>
+                <type value="string"/>
+                <documentation value="The ID of the resource"/>
+            </searchParam>
+            <searchParam>
+                <name value="identifier"/>
+                <type value="token"/>
+                <documentation value="An Identifier of the Appointment"/>
+            </searchParam>
+        </resource>
+         <resource>
+            <type value="Schedule"/>
+            <profile>
+                <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Schedule-1"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <code value="search-type"/>
+            </interaction>
+            <searchParam>
+                <name value="_id"/>
+                <type value="string"/>
+                <documentation value="The ID of the resource"/>
+            </searchParam>
+            <searchParam>
+                <name value="identifier"/>
+                <type value="token"/>
+                <documentation value="A Schedule Identifier"/>
+            </searchParam>
+        </resource>
+         <resource>
+            <type value="Slot"/>
+            <profile>
+                <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Slot-1"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <code value="search-type"/>
+            </interaction>
+            <conditionalUpdate value="true"/>
+            <searchParam>
+                <name value="_id"/>
+                <type value="string"/>
+                <documentation value="The ID of the resource"/>
+            </searchParam>
+            <searchParam>
+                <name value="identifier"/>
+                <type value="token"/>
+                <documentation value="A Slot Identifier"/>
+            </searchParam>
+            <searchParam>
+                <name value="schedule"/>
+                <type value="reference"/>
+                <documentation value="The Schedule Resource that we are seeking a slot within"/>
+            </searchParam>
+            <searchParam>
+                <name value="service"/>
+                <type value="reference"/>
+            </searchParam>
+            <searchParam>
+                <name value="start"/>
+                <type value="date"/>
+                <documentation value="Appointment date/time."/>
+            </searchParam>
+            <searchParam>
+                <name value="status"/>
+                <type value="string"/>
+                <documentation value="The free/busy status of the appointment"/>
+            </searchParam>
+        </resource>
+    </rest>
+</CapabilityStatement>

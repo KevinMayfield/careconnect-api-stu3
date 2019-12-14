@@ -10,13 +10,13 @@
   fhir:Resource.id [ fhir:value "messaging"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Care Connect TIE API Capability Statement</h2><div><p>Minimal conformance requirements for a TIE Server exposing a FHIR RESTful API</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>Bundle</td><td><a href=\"http://hl7.org/fhir/StructureDefinition/Bundle\">http://hl7.org/fhir/StructureDefinition/Bundle</a></td><td></td><td></td><td></td><td>y</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Care Connect TIE API Capability Statement</h2><div><p>Minimal conformance requirements for a TIE Server exposing a FHIR RESTful API. This would typically be found on Trust Integration Systems</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>Bundle</td><td><a href=\"http://hl7.org/fhir/StructureDefinition/Bundle\">http://hl7.org/fhir/StructureDefinition/Bundle</a></td><td></td><td></td><td></td><td>y</td></tr></table></div>"
   ];
   fhir:CapabilityStatement.url [ fhir:value "https://kevinmayfield.github.io/careconnect-api-stu3/CapabilityStatement/messaging"];
   fhir:CapabilityStatement.version [ fhir:value "3.0.0"];
   fhir:CapabilityStatement.name [ fhir:value "Care Connect TIE API Capability Statement"];
   fhir:CapabilityStatement.status [ fhir:value "active"];
-  fhir:CapabilityStatement.date [ fhir:value "2019-12-13T14:13:52+00:00"^^xsd:dateTime];
+  fhir:CapabilityStatement.date [ fhir:value "2019-12-14T09:47:18+00:00"^^xsd:dateTime];
   fhir:CapabilityStatement.publisher [ fhir:value "mayfield-is.co.uk"];
   fhir:CapabilityStatement.contact [
      fhir:index 0;
@@ -26,7 +26,7 @@
        fhir:ContactPoint.value [ fhir:value "kevin.mayfield@mayfield-is.co.uk" ]
      ]
   ];
-  fhir:CapabilityStatement.description [ fhir:value "Minimal conformance requirements for a TIE Server exposing a FHIR RESTful API"];
+  fhir:CapabilityStatement.description [ fhir:value "Minimal conformance requirements for a TIE Server exposing a FHIR RESTful API. This would typically be found on Trust Integration Systems"];
   fhir:CapabilityStatement.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

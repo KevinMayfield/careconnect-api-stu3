@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="diagnostics"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Care Connect Diagnostic Capability Statement</h2><div><p>Minimal conformance requirements for a Diagnostic API. This would typically be found on Patient Administration Systems and Laboratory Information Systems</p>
+</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>DiagnosticReport</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Observation</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Specimen</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>
+  </text>
+  <url value="https://kevinmayfield.github.io/careconnect-api-stu3/CapabilityStatement/diagnostics"/>
+  <version value="3.0.0"/>
+  <name value="Care Connect Diagnostic Capability Statement"/>
+  <status value="active"/>
+  <date value="2019-12-14T09:47:18+00:00"/>
+  <publisher value="mayfield-is.co.uk"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="kevin.mayfield@mayfield-is.co.uk"/>
+    </telecom>
+  </contact>
+  <description value="Minimal conformance requirements for a Diagnostic API. This would typically be found on Patient Administration Systems and Laboratory Information Systems"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="826"/>
+    </coding>
+  </jurisdiction>
+  <kind value="requirements"/>
+  <fhirVersion value="3.0.2"/>
+  <acceptUnknown value="extensions"/>
+  <format value="application/fhir+json"/>
+  <rest>
+    <mode value="server"/>
+    <resource>
+      <type value="DiagnosticReport"/>
+      <profile>
+        <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
+      </profile>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <name value="_id"/>
+        <type value="string"/>
+        <documentation value="The ID of the resource"/>
+      </searchParam>
+      <searchParam>
+        <name value="category"/>
+        <type value="token"/>
+        <documentation value="The classification of the type of report"/>
+      </searchParam>
+      <searchParam>
+        <name value="code"/>
+        <type value="token"/>
+        <documentation value="The code of the report type"/>
+      </searchParam>
+      <searchParam>
+        <name value="date"/>
+        <type value="date"/>
+        <documentation value="Obtained date/time. If the obtained element is a period, a date that falls in the period"/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="The unique id for a particular report"/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="The subject that the report is about (if patient)"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Observation"/>
+      <profile>
+        <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+      </profile>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <name value="_id"/>
+        <type value="string"/>
+        <documentation value="The ID of the resource"/>
+      </searchParam>
+      <searchParam>
+        <name value="category"/>
+        <type value="token"/>
+        <documentation value="The classification of the type of observation"/>
+      </searchParam>
+      <searchParam>
+        <name value="code"/>
+        <type value="token"/>
+        <documentation value="The code of the observation type"/>
+      </searchParam>
+      <searchParam>
+        <name value="date"/>
+        <type value="date"/>
+        <documentation value="Obtained date/time. If the obtained element is a period, a date that falls in the period"/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="The unique id for a particular observation"/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="The subject that the observation is about (if patient)"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Specimen"/>
+      <profile>
+        <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+      </profile>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <name value="_id"/>
+        <type value="string"/>
+        <documentation value="The ID of the resource"/>
+      </searchParam>
+    </resource>
+  </rest>
+</CapabilityStatement>

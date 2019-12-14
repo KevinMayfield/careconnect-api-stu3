@@ -1,0 +1,308 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "medication",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Care Connect Medication Capability Statement</h2><div><p>Minimal conformance requirements for a Medication API. This would typically be found on Prescribing and Dispensing systems</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>Immunization</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Immunization-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Immunization-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Medication</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>MedicationAdministration</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationAdministration-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationAdministration-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>MedicationDispense</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationDispense-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationDispense-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>MedicationRequest</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>MedicationStatement</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>"
+  },
+  "url": "https://kevinmayfield.github.io/careconnect-api-stu3/CapabilityStatement/medication",
+  "version": "3.0.0",
+  "name": "Care Connect Medication Capability Statement",
+  "status": "active",
+  "date": "2019-12-14T09:47:18+00:00",
+  "publisher": "mayfield-is.co.uk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kevin.mayfield@mayfield-is.co.uk"
+        }
+      ]
+    }
+  ],
+  "description": "Minimal conformance requirements for a Medication API. This would typically be found on Prescribing and Dispensing systems",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "826"
+        }
+      ]
+    }
+  ],
+  "kind": "requirements",
+  "fhirVersion": "3.0.2",
+  "acceptUnknown": "extensions",
+  "format": [
+    "application/fhir+json"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "resource": [
+        {
+          "type": "Immunization",
+          "profile": {
+            "reference": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Immunization-1"
+          },
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "type": "string",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "date",
+              "type": "date",
+              "documentation": "Vaccination  (non)-Administration Date"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "Business identifier"
+            },
+            {
+              "name": "notgiven",
+              "type": "token",
+              "documentation": "Administrations which were not given"
+            },
+            {
+              "name": "patient",
+              "type": "reference",
+              "documentation": "The patient for the vaccination record"
+            },
+            {
+              "name": "status",
+              "type": "token",
+              "documentation": "Immunization event status"
+            },
+            {
+              "name": "vaccination-procedure",
+              "type": "token"
+            }
+          ]
+        },
+        {
+          "type": "Medication",
+          "profile": {
+            "reference": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
+          },
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "type": "string",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "code",
+              "type": "token",
+              "documentation": "Codes that identify this medication"
+            }
+          ]
+        },
+        {
+          "type": "MedicationAdministration",
+          "profile": {
+            "reference": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationAdministration-1"
+          },
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "type": "string",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "code",
+              "type": "token",
+              "documentation": "Return administrations of this medication code"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "Return administrations with this external identifier"
+            },
+            {
+              "name": "medication",
+              "type": "reference",
+              "documentation": "Return administrations of this medication resource"
+            },
+            {
+              "name": "patient",
+              "type": "reference",
+              "documentation": "The identity of a patient to list administrations  for"
+            },
+            {
+              "name": "status",
+              "type": "token",
+              "documentation": "MedicationAdministration event status (for example one of active/paused/completed/nullified)"
+            }
+          ]
+        },
+        {
+          "type": "MedicationDispense",
+          "profile": {
+            "reference": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationDispense-1"
+          },
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "type": "string",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "code",
+              "type": "token",
+              "documentation": "Return dispenses of this medicine code"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "Return dispenses with this external identifier"
+            },
+            {
+              "name": "medication",
+              "type": "reference",
+              "documentation": "Return dispenses of this medicine resource"
+            },
+            {
+              "name": "patient",
+              "type": "reference",
+              "documentation": "The identity of a patient to list dispenses  for"
+            },
+            {
+              "name": "status",
+              "type": "token",
+              "documentation": "Return dispenses with a specified dispense status"
+            }
+          ]
+        },
+        {
+          "type": "MedicationRequest",
+          "profile": {
+            "reference": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"
+          },
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "type": "string",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "authoredon",
+              "type": "date",
+              "documentation": "Return prescriptions written on this date"
+            },
+            {
+              "name": "code",
+              "type": "token",
+              "documentation": "Return prescriptions of this medication code"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "Return prescriptions with this external identifier"
+            },
+            {
+              "name": "medication",
+              "type": "reference",
+              "documentation": "Return prescriptions of this medication reference"
+            },
+            {
+              "name": "patient",
+              "type": "reference",
+              "documentation": "Returns prescriptions for a specific patient"
+            },
+            {
+              "name": "status",
+              "type": "token",
+              "documentation": "Status of the prescription"
+            }
+          ]
+        },
+        {
+          "type": "MedicationStatement",
+          "profile": {
+            "reference": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"
+          },
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "type": "string",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "effective",
+              "type": "date",
+              "documentation": "Date when patient was taking (or not taking) the medication"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "Return statements with this external identifier"
+            },
+            {
+              "name": "patient",
+              "type": "reference",
+              "documentation": "Returns statements for a specific patient."
+            },
+            {
+              "name": "status",
+              "type": "token",
+              "documentation": "Return statements that match the given status"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

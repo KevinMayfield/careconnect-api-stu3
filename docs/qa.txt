@@ -2,54 +2,77 @@
 =========================================
 
 err = 12, warn = 0, info = 0
-IG Publisher Version: v1.0.17-SNAPSHOT Out of date - current version is v1.0.19-SNAPSHOT
-Generated Fri Dec 13 14:14:08 GMT 2019. FHIR version 3.0.2 for careconnect.api.stu3# (canonical = https://kevinmayfield.github.io/careconnect-api-stu3)
+IG Publisher Version: v1.0.20-SNAPSHOT
+Generated Sat Dec 14 09:47:35 GMT 2019. FHIR version 3.0.2 for careconnect.api.stu3# (canonical = https://kevinmayfield.github.io/careconnect-api-stu3)
 
- Build Errors : 27 / 2
- C:\Development\kevinmayfield\fhir-api\input\resources\capabilitystatement\edms : 0 / 0
- C:\Development\kevinmayfield\fhir-api\input\resources\capabilitystatement\messaging : 0 / 0
- C:\Development\kevinmayfield\fhir-api\input\resources\capabilitystatement\pas : 0 / 0
- C:\Development\kevinmayfield\fhir-api\input\resources\careconnect-api-ig : 4 / 0
- C:\Development\kevinmayfield\fhir-api\input\resources\searchparameter\careconnect-patient-gender : 2 / 0
+ Build Errors : 43 / 1
+ /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/capabilitystatement/appointment : 0 / 0
+ /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/capabilitystatement/clinical : 0 / 0
+ /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/capabilitystatement/diagnostics : 0 / 0
+ /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/capabilitystatement/foundation : 0 / 0
+ /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/capabilitystatement/medication : 0 / 0
+ /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/capabilitystatement/messaging : 0 / 0
+ /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/capabilitystatement/workflow : 0 / 0
+ /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/careconnect-api-ig : 4 / 0
+ /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/searchparameter/careconnect-patient-gender : 2 / 0
 </table>
 == n/a ==
-WARNING: The IGPublisher used is not up-to-date.  Published content might not be properly checked and/or rendered.
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be careconnect.api.stu3
-ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-edms.html#/html/body/div/div/div/p/a at Line 162, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-edms.json.html#/html/body/div/div/div/p/a at Line 418, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-edms.ttl.html#/html/body/div/div/div/p/a at Line 372, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-edms.xml.html#/html/body/div/div/div/p/a at Line 398, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-messaging.html#/html/body/div/div/div/p/a at Line 162, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-messaging.json.html#/html/body/div/div/div/p/a at Line 205, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-messaging.ttl.html#/html/body/div/div/div/p/a at Line 211, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-messaging.xml.html#/html/body/div/div/div/p/a at Line 192, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-pas.html#/html/body/div/div/div/p/a at Line 162, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-pas.json.html#/html/body/div/div/div/p/a at Line 509, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-pas.ttl.html#/html/body/div/div/div/p/a at Line 458, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\CapabilityStatement-pas.xml.html#/html/body/div/div/div/p/a at Line 483, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\SearchParameter-careconnect-patient-gender.html#/html/body/div/div/div/p/a at Line 161, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\SearchParameter-careconnect-patient-gender.json.html#/html/body/div/div/div/p/a at Line 190, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\SearchParameter-careconnect-patient-gender.ttl.html#/html/body/div/div/div/p/a at Line 199, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\SearchParameter-careconnect-patient-gender.xml.html#/html/body/div/div/div/p/a at Line 181, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\artifacts.html#/html/body/div/div/div/p/a at Line 193, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\encounter.html#/html/body/div/div/div/p/a at Line 169, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\index.html#/html/body/div/div/div/p/a at Line 162, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\observation.html#/html/body/div/div/div/p/a at Line 193, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\organisation.html#/html/body/div/div/div/p/a at Line 169, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\patient.html#/html/body/div/div/div/p/a at Line 228, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\searchparameters.html#/html/body/div/div/div/p/a at Line 148, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\swagger-edms.html#/html/body/div/div/div/p/a at Line 161, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\swagger-messaging.html#/html/body/div/div/div/p/a at Line 161, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\swagger-pas.html#/html/body/div/div/div/p/a at Line 161, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\fhir-api\output\toc.html#/html/body/div/div/div/p/a at Line 135, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-== C:\Development\kevinmayfield\fhir-api\input\resources\CapabilityStatement\edms.xml ==
-== C:\Development\kevinmayfield\fhir-api\input\resources\CapabilityStatement\messaging.xml ==
-== C:\Development\kevinmayfield\fhir-api\input\resources\CapabilityStatement\pas.xml ==
-== C:\Development\kevinmayfield\fhir-api\input\resources\careconnect-api-ig.xml ==
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-appointment.html#/html/body/div/div/div/p/a at Line 162, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-appointment.json.html#/html/body/div/div/div/p/a at Line 292, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-appointment.ttl.html#/html/body/div/div/div/p/a at Line 274, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-appointment.xml.html#/html/body/div/div/div/p/a at Line 273, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-clinical.html#/html/body/div/div/div/p/a at Line 162, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-clinical.json.html#/html/body/div/div/div/p/a at Line 327, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-clinical.ttl.html#/html/body/div/div/div/p/a at Line 302, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-clinical.xml.html#/html/body/div/div/div/p/a at Line 308, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-diagnostics.html#/html/body/div/div/div/p/a at Line 162, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-diagnostics.json.html#/html/body/div/div/div/p/a at Line 306, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-diagnostics.ttl.html#/html/body/div/div/div/p/a at Line 285, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-diagnostics.xml.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-foundation.html#/html/body/div/div/div/p/a at Line 162, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-foundation.json.html#/html/body/div/div/div/p/a at Line 481, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-foundation.ttl.html#/html/body/div/div/div/p/a at Line 419, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-foundation.xml.html#/html/body/div/div/div/p/a at Line 455, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-medication.html#/html/body/div/div/div/p/a at Line 162, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-medication.json.html#/html/body/div/div/div/p/a at Line 453, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-medication.ttl.html#/html/body/div/div/div/p/a at Line 397, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-medication.xml.html#/html/body/div/div/div/p/a at Line 430, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-messaging.html#/html/body/div/div/div/p/a at Line 162, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-messaging.json.html#/html/body/div/div/div/p/a at Line 205, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-messaging.ttl.html#/html/body/div/div/div/p/a at Line 211, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-messaging.xml.html#/html/body/div/div/div/p/a at Line 192, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-workflow.html#/html/body/div/div/div/p/a at Line 162, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-workflow.json.html#/html/body/div/div/div/p/a at Line 316, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-workflow.ttl.html#/html/body/div/div/div/p/a at Line 293, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/CapabilityStatement-workflow.xml.html#/html/body/div/div/div/p/a at Line 301, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/SearchParameter-careconnect-patient-gender.html#/html/body/div/div/div/p/a at Line 161, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/SearchParameter-careconnect-patient-gender.json.html#/html/body/div/div/div/p/a at Line 190, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/SearchParameter-careconnect-patient-gender.ttl.html#/html/body/div/div/div/p/a at Line 199, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/SearchParameter-careconnect-patient-gender.xml.html#/html/body/div/div/div/p/a at Line 181, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/artifacts.html#/html/body/div/div/div/p/a at Line 223, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/encounter.html#/html/body/div/div/div/p/a at Line 169, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/index.html#/html/body/div/div/div/p/a at Line 162, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/observation.html#/html/body/div/div/div/p/a at Line 193, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/organisation.html#/html/body/div/div/div/p/a at Line 169, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/patient.html#/html/body/div/div/div/p/a at Line 228, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/searchparameters.html#/html/body/div/div/div/p/a at Line 148, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/swagger-edms.html#/html/body/div/div/div/p/a at Line 161, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/swagger-messaging.html#/html/body/div/div/div/p/a at Line 161, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/swagger-pas.html#/html/body/div/div/div/p/a at Line 161, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/output/toc.html#/html/body/div/div/div/p/a at Line 135, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+== /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/CapabilityStatement/appointment.xml ==
+== /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/CapabilityStatement/clinical.xml ==
+== /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/CapabilityStatement/diagnostics.xml ==
+== /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/CapabilityStatement/foundation.xml ==
+== /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/CapabilityStatement/medication.xml ==
+== /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/CapabilityStatement/messaging.xml ==
+== /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/CapabilityStatement/workflow.xml ==
+== /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/careconnect-api-ig.xml ==
 ERROR: /f:ImplementationGuide: Undefined element 'title'
 ERROR: /f:ImplementationGuide: Undefined element 'packageId'
 ERROR: /f:ImplementationGuide: Undefined element 'dependsOn'
 ERROR: /f:ImplementationGuide: Undefined element 'definition'
-== C:\Development\kevinmayfield\fhir-api\input\resources\SearchParameter\careconnect-patient-gender.xml ==
-ERROR: https://fhir.hl7.orguk/STU3/SearchParameter/careconnect-patient-gender: Conformance resource C:\Development\kevinmayfield\fhir-api\input\resources\SearchParameter\careconnect-patient-gender.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/SearchParameter/careconnect-patient-gender) does not match the URL (https://fhir.hl7.orguk/STU3/SearchParameter/careconnect-patient-gender)
-ERROR: C:\Development\kevinmayfield\fhir-api\input\resources\searchparameter\careconnect-patient-gender: URL Mismatch https://kevinmayfield.github.io/careconnect-api-stu3/SearchParameter/careconnect-patient-gender vs https://fhir.hl7.orguk/STU3/SearchParameter/careconnect-patient-gender
+== /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/SearchParameter/careconnect-patient-gender.xml ==
+ERROR: https://fhir.hl7.orguk/STU3/SearchParameter/careconnect-patient-gender: Conformance resource /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/SearchParameter/careconnect-patient-gender.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/SearchParameter/careconnect-patient-gender) does not match the URL (https://fhir.hl7.orguk/STU3/SearchParameter/careconnect-patient-gender)
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-api/input/resources/searchparameter/careconnect-patient-gender: URL Mismatch https://kevinmayfield.github.io/careconnect-api-stu3/SearchParameter/careconnect-patient-gender vs https://fhir.hl7.orguk/STU3/SearchParameter/careconnect-patient-gender
