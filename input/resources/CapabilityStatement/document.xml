@@ -1,5 +1,5 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-    <id value="doument"/>
+    <id value="document"/>
     <version value="3.0.0"/>
     <name value="Care Connect Document API Capability Statement"/>
     <status value="active"/>

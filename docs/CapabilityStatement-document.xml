@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="document"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Care Connect Document API Capability Statement</h2><div><p>Minimal conformance requirements for a Document API.This would typically be found on Electronic Document Management Systems</p>
+</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>Binary</td><td><a href="http://hl7.org/fhir/StructureDefinition/Binary">http://hl7.org/fhir/StructureDefinition/Binary</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Composition</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Composition-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Composition-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>DocumentReference</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>
+  </text>
+  <url value="https://kevinmayfield.github.io/careconnect-api-stu3/CapabilityStatement/document"/>
+  <version value="3.0.0"/>
+  <name value="Care Connect Document API Capability Statement"/>
+  <status value="active"/>
+  <date value="2019-12-14T09:59:07+00:00"/>
+  <publisher value="mayfield-is.co.uk"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="kevin.mayfield@mayfield-is.co.uk"/>
+    </telecom>
+  </contact>
+  <description value="Minimal conformance requirements for a Document API.This would typically be found on Electronic Document Management Systems"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="826"/>
+    </coding>
+  </jurisdiction>
+  <kind value="requirements"/>
+  <fhirVersion value="3.0.2"/>
+  <acceptUnknown value="extensions"/>
+  <format value="application/fhir+json"/>
+  <rest>
+    <mode value="server"/>
+    <resource>
+      <type value="Binary"/>
+      <profile>
+        <reference value="http://hl7.org/fhir/StructureDefinition/Binary"/>
+      </profile>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <conditionalUpdate value="true"/>
+      <searchParam>
+        <name value="_id"/>
+        <type value="string"/>
+        <documentation value="The ID of the resource"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Composition"/>
+      <profile>
+        <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Composition-1"/>
+      </profile>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <conditionalUpdate value="true"/>
+      <searchParam>
+        <name value="_id"/>
+        <type value="string"/>
+        <documentation value="The ID of the resource"/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="Master Version Specific Identifier"/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Who/what is the subject of the document"/>
+      </searchParam>
+      <searchParam>
+        <name value="period"/>
+        <type value="date"/>
+        <documentation value="Time of service that is being documented"/>
+      </searchParam>
+      <searchParam>
+        <name value="setting"/>
+        <type value="token"/>
+        <documentation value="Additional details about where the content was created (e.g. clinical specialty)"/>
+      </searchParam>
+      <searchParam>
+        <name value="type"/>
+        <type value="token"/>
+        <documentation value="Kind of document (LOINC if possible)"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="DocumentReference"/>
+      <profile>
+        <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1"/>
+      </profile>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <conditionalUpdate value="true"/>
+      <searchParam>
+        <name value="_id"/>
+        <type value="string"/>
+        <documentation value="The ID of the resource"/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="Master Version Specific Identifier"/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Who/what is the subject of the document"/>
+      </searchParam>
+      <searchParam>
+        <name value="period"/>
+        <type value="date"/>
+        <documentation value="Time of service that is being documented"/>
+      </searchParam>
+      <searchParam>
+        <name value="setting"/>
+        <type value="token"/>
+        <documentation value="Additional details about where the content was created (e.g. clinical specialty)"/>
+      </searchParam>
+      <searchParam>
+        <name value="type"/>
+        <type value="token"/>
+        <documentation value="Kind of document (LOINC if possible)"/>
+      </searchParam>
+    </resource>
+  </rest>
+</CapabilityStatement>

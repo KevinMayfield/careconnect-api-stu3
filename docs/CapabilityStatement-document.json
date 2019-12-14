@@ -1,0 +1,164 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "document",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Care Connect Document API Capability Statement</h2><div><p>Minimal conformance requirements for a Document API.This would typically be found on Electronic Document Management Systems</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>Binary</td><td><a href=\"http://hl7.org/fhir/StructureDefinition/Binary\">http://hl7.org/fhir/StructureDefinition/Binary</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Composition</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Composition-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Composition-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>DocumentReference</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>"
+  },
+  "url": "https://kevinmayfield.github.io/careconnect-api-stu3/CapabilityStatement/document",
+  "version": "3.0.0",
+  "name": "Care Connect Document API Capability Statement",
+  "status": "active",
+  "date": "2019-12-14T09:59:07+00:00",
+  "publisher": "mayfield-is.co.uk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kevin.mayfield@mayfield-is.co.uk"
+        }
+      ]
+    }
+  ],
+  "description": "Minimal conformance requirements for a Document API.This would typically be found on Electronic Document Management Systems",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "826"
+        }
+      ]
+    }
+  ],
+  "kind": "requirements",
+  "fhirVersion": "3.0.2",
+  "acceptUnknown": "extensions",
+  "format": [
+    "application/fhir+json"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "resource": [
+        {
+          "type": "Binary",
+          "profile": {
+            "reference": "http://hl7.org/fhir/StructureDefinition/Binary"
+          },
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "conditionalUpdate": true,
+          "searchParam": [
+            {
+              "name": "_id",
+              "type": "string",
+              "documentation": "The ID of the resource"
+            }
+          ]
+        },
+        {
+          "type": "Composition",
+          "profile": {
+            "reference": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Composition-1"
+          },
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "conditionalUpdate": true,
+          "searchParam": [
+            {
+              "name": "_id",
+              "type": "string",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "Master Version Specific Identifier"
+            },
+            {
+              "name": "patient",
+              "type": "reference",
+              "documentation": "Who/what is the subject of the document"
+            },
+            {
+              "name": "period",
+              "type": "date",
+              "documentation": "Time of service that is being documented"
+            },
+            {
+              "name": "setting",
+              "type": "token",
+              "documentation": "Additional details about where the content was created (e.g. clinical specialty)"
+            },
+            {
+              "name": "type",
+              "type": "token",
+              "documentation": "Kind of document (LOINC if possible)"
+            }
+          ]
+        },
+        {
+          "type": "DocumentReference",
+          "profile": {
+            "reference": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1"
+          },
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "conditionalUpdate": true,
+          "searchParam": [
+            {
+              "name": "_id",
+              "type": "string",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "Master Version Specific Identifier"
+            },
+            {
+              "name": "patient",
+              "type": "reference",
+              "documentation": "Who/what is the subject of the document"
+            },
+            {
+              "name": "period",
+              "type": "date",
+              "documentation": "Time of service that is being documented"
+            },
+            {
+              "name": "setting",
+              "type": "token",
+              "documentation": "Additional details about where the content was created (e.g. clinical specialty)"
+            },
+            {
+              "name": "type",
+              "type": "token",
+              "documentation": "Kind of document (LOINC if possible)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

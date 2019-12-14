@@ -3,13 +3,13 @@
   "id": "foundation",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Care Connect Foundation API Capability Statement</h2><div><p>Minimal conformance requirements for a Foundation API. This would typically be found on health Systems</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>Flag</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Flag-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Flag-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Location</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Patient</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Practitioner</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Procedure</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Care Connect Foundation API Capability Statement</h2><div><p>Minimal conformance requirements for a Foundation API. This would typically be found on health Systems</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>Flag</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Flag-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Flag-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>HealthcareService</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Location</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Patient</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Practitioner</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Procedure</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>"
   },
   "url": "https://kevinmayfield.github.io/careconnect-api-stu3/CapabilityStatement/foundation",
   "version": "3.0.0",
   "name": "Care Connect Foundation API Capability Statement",
   "status": "active",
-  "date": "2019-12-14T09:47:18+00:00",
+  "date": "2019-12-14T09:59:07+00:00",
   "publisher": "mayfield-is.co.uk",
   "contact": [
     {
@@ -70,6 +70,32 @@
               "name": "patient",
               "type": "reference",
               "documentation": "The identity of a subject to list flags for"
+            }
+          ]
+        },
+        {
+          "type": "HealthcareService",
+          "profile": {
+            "reference": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1"
+          },
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "type": "string",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "Business identifier"
             }
           ]
         },
