@@ -10,7 +10,7 @@
   <name value="Care Connect API"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2019-12-14T09:59:07+00:00"/>
+  <date value="2020-01-04T08:01:49+00:00"/>
   <publisher value="mayfield-is.co.uk"/>
   <contact>
     <telecom>
@@ -27,6 +27,12 @@
   </jurisdiction>
   <fhirVersion value="3.0.2"/>
   <dependency>
+    <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId">
+      <valueId value="careconnect.base.stu3"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.version">
+      <valueString value="dev"/>
+    </extension>
     <type value="reference"/>
     <uri value="https://fhir.hl7.org.uk/STU3/ImplementationGuide/careconnect.base.stu3"/>
   </dependency>

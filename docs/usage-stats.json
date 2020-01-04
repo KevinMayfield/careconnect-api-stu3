@@ -4,5 +4,12 @@
   "jurisdiction": "826",
   "extensions": [],
   "profiles": {},
-  "usage": {}
+  "usage": {
+    "http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId": [
+      "ImplementationGuide.dependency"
+    ],
+    "http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.version": [
+      "ImplementationGuide.dependency"
+    ]
+  }
 }

@@ -9,7 +9,7 @@
   "name": "Care Connect API",
   "status": "draft",
   "experimental": false,
-  "date": "2019-12-14T09:59:07+00:00",
+  "date": "2020-01-04T08:01:49+00:00",
   "publisher": "mayfield-is.co.uk",
   "contact": [
     {
@@ -35,6 +35,16 @@
   "fhirVersion": "3.0.2",
   "dependency": [
     {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId",
+          "valueId": "careconnect.base.stu3"
+        },
+        {
+          "url": "http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.version",
+          "valueString": "dev"
+        }
+      ],
       "type": "reference",
       "uri": "https://fhir.hl7.org.uk/STU3/ImplementationGuide/careconnect.base.stu3"
     }

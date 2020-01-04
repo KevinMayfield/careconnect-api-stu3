@@ -28,7 +28,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/OperationOutcome"
                 }
               }
             }
@@ -38,7 +38,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/CapabilityStatement"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/CapabilityStatement"
                 }
               }
             }
@@ -72,7 +72,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/OperationOutcome"
                 }
               }
             }
@@ -82,7 +82,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/Bundle"
                 }
               }
             }
@@ -172,7 +172,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/OperationOutcome"
                 }
               }
             }
@@ -190,7 +190,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Immunization"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/Immunization"
                 }
               }
             }
@@ -227,7 +227,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/OperationOutcome"
                 }
               }
             }
@@ -237,7 +237,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/Bundle"
                 }
               }
             }
@@ -287,7 +287,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/OperationOutcome"
                 }
               }
             }
@@ -305,7 +305,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Medication"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/Medication"
                 }
               }
             }
@@ -342,7 +342,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/OperationOutcome"
                 }
               }
             }
@@ -352,7 +352,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/Bundle"
                 }
               }
             }
@@ -434,7 +434,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/OperationOutcome"
                 }
               }
             }
@@ -452,7 +452,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/MedicationAdministration"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/MedicationAdministration"
                 }
               }
             }
@@ -489,7 +489,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/OperationOutcome"
                 }
               }
             }
@@ -499,7 +499,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/Bundle"
                 }
               }
             }
@@ -581,7 +581,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/OperationOutcome"
                 }
               }
             }
@@ -599,7 +599,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/MedicationDispense"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/MedicationDispense"
                 }
               }
             }
@@ -636,7 +636,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/OperationOutcome"
                 }
               }
             }
@@ -646,7 +646,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/Bundle"
                 }
               }
             }
@@ -737,7 +737,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/OperationOutcome"
                 }
               }
             }
@@ -755,7 +755,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/MedicationRequest"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/MedicationRequest"
                 }
               }
             }
@@ -792,7 +792,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/OperationOutcome"
                 }
               }
             }
@@ -802,7 +802,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/Bundle"
                 }
               }
             }
@@ -877,7 +877,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/OperationOutcome"
                 }
               }
             }
@@ -895,7 +895,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/MedicationStatement"
+                  "$ref": "https://hl7.org/fhir/STU3/fhir.schema.json#/definitions/MedicationStatement"
                 }
               }
             }

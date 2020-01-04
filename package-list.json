@@ -3,18 +3,25 @@
  "title" : "Example CareConnect API STU3",
  "canonical" : "https://kevinmayfield.github.io/careconnect-api-stu3",
  "introduction" : "The introduction that should appear in the FHIR IG registry",
- "list" : [{
-  "version" : "current",
-  "desc" : "Continuous Integration Build (latest in version control)",
-  "path" : "https://kevinmayfield.github.io/careconnect-api-stu3",
-  "status" : "ci-build",
-  "current" : true
- },{
+ "list" : [
+  {
+   "version": "3.0.0",
+   "fhirversion": "3.0.2",
+   "date": "2020-01-04",
+   "desc": "Continuous Integration Build (latest in version control)",
+   "path": "http://build.fhir.org/ig/kevinmayfield/careconnect-api-stu3",
+   "status": "ci-build",
+   "current": true,
+   "sequence": "STU3"
+  },
+  {
   "version" : "3.0.0",
-  "date" : "2099-01-01", 
+   "fhirversion": "3.0.2",
+  "date" : "2020-01-04",
   "desc" : "Initial STU ballot (Mmm yyyy Ballot)",   
   "path" : "https://kevinmayfield.github.io/careconnect-api-stu3",
   "status" : "draft",
+   "current": true,
   "sequence" : "STU3"
  }]
 }
